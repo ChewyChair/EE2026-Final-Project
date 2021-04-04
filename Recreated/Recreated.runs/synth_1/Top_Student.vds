@@ -1,0 +1,1469 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Sat Apr  3 01:07:58 2021
+# Process ID: 11228
+# Current directory: C:/Users/ong1m/Downloads/Telegram Desktop/S2_25_Chew Yi Jie_Marcus Ong Yih_Archive.xpr/Recreated/Recreated.runs/synth_1
+# Command line: vivado.exe -log Top_Student.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Top_Student.tcl
+# Log file: C:/Users/ong1m/Downloads/Telegram Desktop/S2_25_Chew Yi Jie_Marcus Ong Yih_Archive.xpr/Recreated/Recreated.runs/synth_1/Top_Student.vds
+# Journal file: C:/Users/ong1m/Downloads/Telegram Desktop/S2_25_Chew Yi Jie_Marcus Ong Yih_Archive.xpr/Recreated/Recreated.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source Top_Student.tcl -notrace
+Command: synth_design -top Top_Student -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 21588 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 357.555 ; gain = 101.293
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Top_Student' [C:/Users/ong1m/Downloads/Telegram Desktop/S2_25_Chew Yi Jie_Marcus Ong Yih_Archive.xpr/Recreated/Recreated.srcs/sources_1/imports/new/Top_Student.v:18]
+INFO: [Synth 8-6157] synthesizing module 'slowclock' [C:/Users/ong1m/Downloads/Telegram Desktop/S2_25_Chew Yi Jie_Marcus Ong Yih_Archive.xpr/Recreated/Recreated.srcs/sources_1/imports/new/slowclock.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'slowclock' (1#1) [C:/Users/ong1m/Downloads/Telegram Desktop/S2_25_Chew Yi Jie_Marcus Ong Yih_Archive.xpr/Recreated/Recreated.srcs/sources_1/imports/new/slowclock.v:23]
+INFO: [Synth 8-6157] synthesizing module 'max_vol' [C:/Users/ong1m/Downloads/Telegram Desktop/S2_25_Chew Yi Jie_Marcus Ong Yih_Archive.xpr/Recreated/Recreated.srcs/sources_1/imports/new/max_vol.v:23]
+WARNING: [Synth 8-6014] Unused sequential element value_reg was removed.  [C:/Users/ong1m/Downloads/Telegram Desktop/S2_25_Chew Yi Jie_Marcus Ong Yih_Archive.xpr/Recreated/Recreated.srcs/sources_1/imports/new/max_vol.v:36]
+WARNING: [Synth 8-6014] Unused sequential element value_reg was removed.  [C:/Users/ong1m/Downloads/Telegram Desktop/S2_25_Chew Yi Jie_Marcus Ong Yih_Archive.xpr/Recreated/Recreated.srcs/sources_1/imports/new/max_vol.v:57]
+INFO: [Synth 8-6155] done synthesizing module 'max_vol' (2#1) [C:/Users/ong1m/Downloads/Telegram Desktop/S2_25_Chew Yi Jie_Marcus Ong Yih_Archive.xpr/Recreated/Recreated.srcs/sources_1/imports/new/max_vol.v:23]
+INFO: [Synth 8-6157] synthesizing module 'getcoords' [C:/Users/ong1m/Downloads/Telegram Desktop/S2_25_Chew Yi Jie_Marcus Ong Yih_Archive.xpr/Recreated/Recreated.srcs/sources_1/imports/new/getcoords.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'getcoords' (3#1) [C:/Users/ong1m/Downloads/Telegram Desktop/S2_25_Chew Yi Jie_Marcus Ong Yih_Archive.xpr/Recreated/Recreated.srcs/sources_1/imports/new/getcoords.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Audio_Capture' [C:/Users/ong1m/Downloads/Telegram Desktop/S2_25_Chew Yi Jie_Marcus Ong Yih_Archive.xpr/Recreated/Recreated.srcs/sources_1/imports/new/Audio_Capture.v:25]
+INFO: [Synth 8-6155] done synthesizing module 'Audio_Capture' (4#1) [C:/Users/ong1m/Downloads/Telegram Desktop/S2_25_Chew Yi Jie_Marcus Ong Yih_Archive.xpr/Recreated/Recreated.srcs/sources_1/imports/new/Audio_Capture.v:25]
+INFO: [Synth 8-6157] synthesizing module 'Oled_Display' [C:/Users/ong1m/Downloads/Telegram Desktop/S2_25_Chew Yi Jie_Marcus Ong Yih_Archive.xpr/Recreated/Recreated.srcs/sources_1/imports/new/Oled_Display.v:36]
+	Parameter Width bound to: 96 - type: integer 
+	Parameter Height bound to: 64 - type: integer 
+	Parameter PixelCount bound to: 6144 - type: integer 
+	Parameter PixelCountWidth bound to: 13 - type: integer 
+	Parameter ClkFreq bound to: 6250000 - type: integer 
+	Parameter FrameFreq bound to: 60 - type: integer 
+	Parameter FrameDiv bound to: 104166 - type: integer 
+	Parameter FrameDivWidth bound to: 17 - type: integer 
+	Parameter PowerDelay bound to: 20 - type: integer 
+	Parameter ResetDelay bound to: 3 - type: integer 
+	Parameter VccEnDelay bound to: 20 - type: integer 
+	Parameter StartupCompleteDelay bound to: 100 - type: integer 
+	Parameter MaxDelay bound to: 100 - type: integer 
+	Parameter MaxDelayCount bound to: 625000 - type: integer 
+	Parameter StateCount bound to: 32 - type: integer 
+	Parameter StateWidth bound to: 5 - type: integer 
+	Parameter PowerUp bound to: 5'b00000 
+	Parameter Reset bound to: 5'b00001 
+	Parameter ReleaseReset bound to: 5'b00011 
+	Parameter EnableDriver bound to: 5'b00010 
+	Parameter DisplayOff bound to: 5'b00110 
+	Parameter SetRemapDisplayFormat bound to: 5'b00111 
+	Parameter SetStartLine bound to: 5'b00101 
+	Parameter SetOffset bound to: 5'b00100 
+	Parameter SetNormalDisplay bound to: 5'b01100 
+	Parameter SetMultiplexRatio bound to: 5'b01101 
+	Parameter SetMasterConfiguration bound to: 5'b01111 
+	Parameter DisablePowerSave bound to: 5'b01110 
+	Parameter SetPhaseAdjust bound to: 5'b01010 
+	Parameter SetDisplayClock bound to: 5'b01011 
+	Parameter SetSecondPrechargeA bound to: 5'b01001 
+	Parameter SetSecondPrechargeB bound to: 5'b01000 
+	Parameter SetSecondPrechargeC bound to: 5'b11000 
+	Parameter SetPrechargeLevel bound to: 5'b11001 
+	Parameter SetVCOMH bound to: 5'b11011 
+	Parameter SetMasterCurrent bound to: 5'b11010 
+	Parameter SetContrastA bound to: 5'b11110 
+	Parameter SetContrastB bound to: 5'b11111 
+	Parameter SetContrastC bound to: 5'b11101 
+	Parameter DisableScrolling bound to: 5'b11100 
+	Parameter ClearScreen bound to: 5'b10100 
+	Parameter VccEn bound to: 5'b10101 
+	Parameter DisplayOn bound to: 5'b10111 
+	Parameter PrepareNextFrame bound to: 5'b10110 
+	Parameter SetColAddress bound to: 5'b10010 
+	Parameter SetRowAddress bound to: 5'b10011 
+	Parameter WaitNextFrame bound to: 5'b10001 
+	Parameter SendPixel bound to: 5'b10000 
+	Parameter SpiCommandMaxWidth bound to: 40 - type: integer 
+	Parameter SpiCommandBitCountWidth bound to: 6 - type: integer 
+INFO: [Synth 8-226] default block is never used [C:/Users/ong1m/Downloads/Telegram Desktop/S2_25_Chew Yi Jie_Marcus Ong Yih_Archive.xpr/Recreated/Recreated.srcs/sources_1/imports/new/Oled_Display.v:124]
+INFO: [Synth 8-226] default block is never used [C:/Users/ong1m/Downloads/Telegram Desktop/S2_25_Chew Yi Jie_Marcus Ong Yih_Archive.xpr/Recreated/Recreated.srcs/sources_1/imports/new/Oled_Display.v:201]
+WARNING: [Synth 8-693] zero replication count - replication ignored [C:/Users/ong1m/Downloads/Telegram Desktop/S2_25_Chew Yi Jie_Marcus Ong Yih_Archive.xpr/Recreated/Recreated.srcs/sources_1/imports/new/Oled_Display.v:349]
+INFO: [Synth 8-6155] done synthesizing module 'Oled_Display' (5#1) [C:/Users/ong1m/Downloads/Telegram Desktop/S2_25_Chew Yi Jie_Marcus Ong Yih_Archive.xpr/Recreated/Recreated.srcs/sources_1/imports/new/Oled_Display.v:36]
+WARNING: [Synth 8-689] width (1) of port connection 'teststate' does not match port width (5) of module 'Oled_Display' [C:/Users/ong1m/Downloads/Telegram Desktop/S2_25_Chew Yi Jie_Marcus Ong Yih_Archive.xpr/Recreated/Recreated.srcs/sources_1/imports/new/Top_Student.v:69]
+INFO: [Synth 8-6157] synthesizing module 'Oled_DRIVER_main' [C:/Users/ong1m/Downloads/Telegram Desktop/S2_25_Chew Yi Jie_Marcus Ong Yih_Archive.xpr/Recreated/Recreated.srcs/sources_1/imports/new/Oled_DRIVER_main.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Oled_DRIVER_main' (6#1) [C:/Users/ong1m/Downloads/Telegram Desktop/S2_25_Chew Yi Jie_Marcus Ong Yih_Archive.xpr/Recreated/Recreated.srcs/sources_1/imports/new/Oled_DRIVER_main.v:3]
+INFO: [Synth 8-6157] synthesizing module 'segment_driver' [C:/Users/ong1m/Downloads/Telegram Desktop/S2_25_Chew Yi Jie_Marcus Ong Yih_Archive.xpr/Recreated/Recreated.srcs/sources_1/imports/new/segment_driver.v:3]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/ong1m/Downloads/Telegram Desktop/S2_25_Chew Yi Jie_Marcus Ong Yih_Archive.xpr/Recreated/Recreated.srcs/sources_1/imports/new/segment_driver.v:16]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/ong1m/Downloads/Telegram Desktop/S2_25_Chew Yi Jie_Marcus Ong Yih_Archive.xpr/Recreated/Recreated.srcs/sources_1/imports/new/segment_driver.v:106]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/ong1m/Downloads/Telegram Desktop/S2_25_Chew Yi Jie_Marcus Ong Yih_Archive.xpr/Recreated/Recreated.srcs/sources_1/imports/new/segment_driver.v:118]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/ong1m/Downloads/Telegram Desktop/S2_25_Chew Yi Jie_Marcus Ong Yih_Archive.xpr/Recreated/Recreated.srcs/sources_1/imports/new/segment_driver.v:130]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/ong1m/Downloads/Telegram Desktop/S2_25_Chew Yi Jie_Marcus Ong Yih_Archive.xpr/Recreated/Recreated.srcs/sources_1/imports/new/segment_driver.v:150]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/ong1m/Downloads/Telegram Desktop/S2_25_Chew Yi Jie_Marcus Ong Yih_Archive.xpr/Recreated/Recreated.srcs/sources_1/imports/new/segment_driver.v:162]
+INFO: [Synth 8-6155] done synthesizing module 'segment_driver' (7#1) [C:/Users/ong1m/Downloads/Telegram Desktop/S2_25_Chew Yi Jie_Marcus Ong Yih_Archive.xpr/Recreated/Recreated.srcs/sources_1/imports/new/segment_driver.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Oled_DRIVER_menu' [C:/Users/ong1m/Downloads/Telegram Desktop/S2_25_Chew Yi Jie_Marcus Ong Yih_Archive.xpr/Recreated/Recreated.srcs/sources_1/imports/new/Oled_DRIVER_menu.v:3]
+INFO: [Synth 8-6157] synthesizing module 'debounced_button' [C:/Users/ong1m/Downloads/Telegram Desktop/S2_25_Chew Yi Jie_Marcus Ong Yih_Archive.xpr/Recreated/Recreated.srcs/sources_1/imports/new/debounced_button.v:23]
+INFO: [Synth 8-6157] synthesizing module 'DFF' [C:/Users/ong1m/Downloads/Telegram Desktop/S2_25_Chew Yi Jie_Marcus Ong Yih_Archive.xpr/Recreated/Recreated.srcs/sources_1/imports/new/DFF.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'DFF' (8#1) [C:/Users/ong1m/Downloads/Telegram Desktop/S2_25_Chew Yi Jie_Marcus Ong Yih_Archive.xpr/Recreated/Recreated.srcs/sources_1/imports/new/DFF.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'debounced_button' (9#1) [C:/Users/ong1m/Downloads/Telegram Desktop/S2_25_Chew Yi Jie_Marcus Ong Yih_Archive.xpr/Recreated/Recreated.srcs/sources_1/imports/new/debounced_button.v:23]
+INFO: [Synth 8-6157] synthesizing module 'menu_oled' [C:/Users/ong1m/Downloads/Telegram Desktop/S2_25_Chew Yi Jie_Marcus Ong Yih_Archive.xpr/Recreated/Recreated.srcs/sources_1/imports/new/menu_oled.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'menu_oled' (10#1) [C:/Users/ong1m/Downloads/Telegram Desktop/S2_25_Chew Yi Jie_Marcus Ong Yih_Archive.xpr/Recreated/Recreated.srcs/sources_1/imports/new/menu_oled.v:3]
+WARNING: [Synth 8-6014] Unused sequential element hold_L_reg was removed.  [C:/Users/ong1m/Downloads/Telegram Desktop/S2_25_Chew Yi Jie_Marcus Ong Yih_Archive.xpr/Recreated/Recreated.srcs/sources_1/imports/new/Oled_DRIVER_menu.v:28]
+WARNING: [Synth 8-6014] Unused sequential element hold_R_reg was removed.  [C:/Users/ong1m/Downloads/Telegram Desktop/S2_25_Chew Yi Jie_Marcus Ong Yih_Archive.xpr/Recreated/Recreated.srcs/sources_1/imports/new/Oled_DRIVER_menu.v:29]
+INFO: [Synth 8-6155] done synthesizing module 'Oled_DRIVER_menu' (11#1) [C:/Users/ong1m/Downloads/Telegram Desktop/S2_25_Chew Yi Jie_Marcus Ong Yih_Archive.xpr/Recreated/Recreated.srcs/sources_1/imports/new/Oled_DRIVER_menu.v:3]
+WARNING: [Synth 8-689] width (7) of port connection 'X' does not match port width (8) of module 'Oled_DRIVER_menu' [C:/Users/ong1m/Downloads/Telegram Desktop/S2_25_Chew Yi Jie_Marcus Ong Yih_Archive.xpr/Recreated/Recreated.srcs/sources_1/imports/new/Top_Student.v:94]
+WARNING: [Synth 8-689] width (7) of port connection 'Y' does not match port width (8) of module 'Oled_DRIVER_menu' [C:/Users/ong1m/Downloads/Telegram Desktop/S2_25_Chew Yi Jie_Marcus Ong Yih_Archive.xpr/Recreated/Recreated.srcs/sources_1/imports/new/Top_Student.v:94]
+INFO: [Synth 8-6157] synthesizing module 'Oled_DRIVER_visualiser' [C:/Users/ong1m/Downloads/Telegram Desktop/S2_25_Chew Yi Jie_Marcus Ong Yih_Archive.xpr/Recreated/Recreated.srcs/sources_1/imports/new/Oled_DRIVER_visualiser.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Oled_Border' [C:/Users/ong1m/Downloads/Telegram Desktop/S2_25_Chew Yi Jie_Marcus Ong Yih_Archive.xpr/Recreated/Recreated.srcs/sources_1/imports/new/Oled_Border.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Oled_Border' (12#1) [C:/Users/ong1m/Downloads/Telegram Desktop/S2_25_Chew Yi Jie_Marcus Ong Yih_Archive.xpr/Recreated/Recreated.srcs/sources_1/imports/new/Oled_Border.v:3]
+INFO: [Synth 8-6157] synthesizing module 'volume_bar_oled' [C:/Users/ong1m/Downloads/Telegram Desktop/S2_25_Chew Yi Jie_Marcus Ong Yih_Archive.xpr/Recreated/Recreated.srcs/sources_1/imports/new/volume_bar_oled.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'volume_bar_oled' (13#1) [C:/Users/ong1m/Downloads/Telegram Desktop/S2_25_Chew Yi Jie_Marcus Ong Yih_Archive.xpr/Recreated/Recreated.srcs/sources_1/imports/new/volume_bar_oled.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Oled_DRIVER_visualiser' (14#1) [C:/Users/ong1m/Downloads/Telegram Desktop/S2_25_Chew Yi Jie_Marcus Ong Yih_Archive.xpr/Recreated/Recreated.srcs/sources_1/imports/new/Oled_DRIVER_visualiser.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Oled_DRIVER_shibarun' [C:/Users/ong1m/Downloads/Telegram Desktop/S2_25_Chew Yi Jie_Marcus Ong Yih_Archive.xpr/Recreated/Recreated.srcs/sources_1/new/Oled_DRIVER_shibarun.v:3]
+INFO: [Synth 8-3876] $readmem data file 'shiba.mem' is read successfully [C:/Users/ong1m/Downloads/Telegram Desktop/S2_25_Chew Yi Jie_Marcus Ong Yih_Archive.xpr/Recreated/Recreated.srcs/sources_1/new/Oled_DRIVER_shibarun.v:12]
+INFO: [Synth 8-3876] $readmem data file 'sbr_gameover.mem' is read successfully [C:/Users/ong1m/Downloads/Telegram Desktop/S2_25_Chew Yi Jie_Marcus Ong Yih_Archive.xpr/Recreated/Recreated.srcs/sources_1/new/Oled_DRIVER_shibarun.v:13]
+INFO: [Synth 8-6157] synthesizing module 'rng_6bit' [C:/Users/ong1m/Downloads/Telegram Desktop/S2_25_Chew Yi Jie_Marcus Ong Yih_Archive.xpr/Recreated/Recreated.srcs/sources_1/new/rng_6bit.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'rng_6bit' (15#1) [C:/Users/ong1m/Downloads/Telegram Desktop/S2_25_Chew Yi Jie_Marcus Ong Yih_Archive.xpr/Recreated/Recreated.srcs/sources_1/new/rng_6bit.v:4]
+WARNING: [Synth 8-689] width (3) of port connection 'OUT' does not match port width (6) of module 'rng_6bit' [C:/Users/ong1m/Downloads/Telegram Desktop/S2_25_Chew Yi Jie_Marcus Ong Yih_Archive.xpr/Recreated/Recreated.srcs/sources_1/new/Oled_DRIVER_shibarun.v:74]
+WARNING: [Synth 8-6090] variable 'score' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/ong1m/Downloads/Telegram Desktop/S2_25_Chew Yi Jie_Marcus Ong Yih_Archive.xpr/Recreated/Recreated.srcs/sources_1/new/Oled_DRIVER_shibarun.v:115]
+WARNING: [Synth 8-6090] variable 'obstaclepos0' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/ong1m/Downloads/Telegram Desktop/S2_25_Chew Yi Jie_Marcus Ong Yih_Archive.xpr/Recreated/Recreated.srcs/sources_1/new/Oled_DRIVER_shibarun.v:116]
+WARNING: [Synth 8-6090] variable 'obstaclepos1' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/ong1m/Downloads/Telegram Desktop/S2_25_Chew Yi Jie_Marcus Ong Yih_Archive.xpr/Recreated/Recreated.srcs/sources_1/new/Oled_DRIVER_shibarun.v:117]
+WARNING: [Synth 8-6090] variable 'obstacledelay' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/ong1m/Downloads/Telegram Desktop/S2_25_Chew Yi Jie_Marcus Ong Yih_Archive.xpr/Recreated/Recreated.srcs/sources_1/new/Oled_DRIVER_shibarun.v:118]
+WARNING: [Synth 8-6090] variable 'shiba_jump_clock' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/ong1m/Downloads/Telegram Desktop/S2_25_Chew Yi Jie_Marcus Ong Yih_Archive.xpr/Recreated/Recreated.srcs/sources_1/new/Oled_DRIVER_shibarun.v:132]
+WARNING: [Synth 8-6090] variable 'title_timer' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/ong1m/Downloads/Telegram Desktop/S2_25_Chew Yi Jie_Marcus Ong Yih_Archive.xpr/Recreated/Recreated.srcs/sources_1/new/Oled_DRIVER_shibarun.v:145]
+WARNING: [Synth 8-6090] variable 'hold_C' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/ong1m/Downloads/Telegram Desktop/S2_25_Chew Yi Jie_Marcus Ong Yih_Archive.xpr/Recreated/Recreated.srcs/sources_1/new/Oled_DRIVER_shibarun.v:146]
+WARNING: [Synth 8-6014] Unused sequential element random0x_reg was removed.  [C:/Users/ong1m/Downloads/Telegram Desktop/S2_25_Chew Yi Jie_Marcus Ong Yih_Archive.xpr/Recreated/Recreated.srcs/sources_1/new/Oled_DRIVER_shibarun.v:121]
+WARNING: [Synth 8-6014] Unused sequential element random1x_reg was removed.  [C:/Users/ong1m/Downloads/Telegram Desktop/S2_25_Chew Yi Jie_Marcus Ong Yih_Archive.xpr/Recreated/Recreated.srcs/sources_1/new/Oled_DRIVER_shibarun.v:122]
+WARNING: [Synth 8-6014] Unused sequential element shiba_float_reg was removed.  [C:/Users/ong1m/Downloads/Telegram Desktop/S2_25_Chew Yi Jie_Marcus Ong Yih_Archive.xpr/Recreated/Recreated.srcs/sources_1/new/Oled_DRIVER_shibarun.v:135]
+WARNING: [Synth 8-6014] Unused sequential element oled_title_reg was removed.  [C:/Users/ong1m/Downloads/Telegram Desktop/S2_25_Chew Yi Jie_Marcus Ong Yih_Archive.xpr/Recreated/Recreated.srcs/sources_1/new/Oled_DRIVER_shibarun.v:174]
+WARNING: [Synth 8-6014] Unused sequential element oled_gameover_reg was removed.  [C:/Users/ong1m/Downloads/Telegram Desktop/S2_25_Chew Yi Jie_Marcus Ong Yih_Archive.xpr/Recreated/Recreated.srcs/sources_1/new/Oled_DRIVER_shibarun.v:175]
+WARNING: [Synth 8-6014] Unused sequential element oled_game_reg was removed.  [C:/Users/ong1m/Downloads/Telegram Desktop/S2_25_Chew Yi Jie_Marcus Ong Yih_Archive.xpr/Recreated/Recreated.srcs/sources_1/new/Oled_DRIVER_shibarun.v:176]
+INFO: [Synth 8-6155] done synthesizing module 'Oled_DRIVER_shibarun' (16#1) [C:/Users/ong1m/Downloads/Telegram Desktop/S2_25_Chew Yi Jie_Marcus Ong Yih_Archive.xpr/Recreated/Recreated.srcs/sources_1/new/Oled_DRIVER_shibarun.v:3]
+WARNING: [Synth 8-689] width (3) of port connection 'display_flag' does not match port width (2) of module 'Oled_DRIVER_shibarun' [C:/Users/ong1m/Downloads/Telegram Desktop/S2_25_Chew Yi Jie_Marcus Ong Yih_Archive.xpr/Recreated/Recreated.srcs/sources_1/imports/new/Top_Student.v:98]
+INFO: [Synth 8-6157] synthesizing module 'Oled_DRIVER_shooter' [C:/Users/ong1m/Downloads/Telegram Desktop/S2_25_Chew Yi Jie_Marcus Ong Yih_Archive.xpr/Recreated/Recreated.srcs/sources_1/new/Oled_DRIVER_shooter.v:3]
+INFO: [Synth 8-3876] $readmem data file 'shooter.mem' is read successfully [C:/Users/ong1m/Downloads/Telegram Desktop/S2_25_Chew Yi Jie_Marcus Ong Yih_Archive.xpr/Recreated/Recreated.srcs/sources_1/new/Oled_DRIVER_shooter.v:17]
+INFO: [Synth 8-3876] $readmem data file 'shooter_go.mem' is read successfully [C:/Users/ong1m/Downloads/Telegram Desktop/S2_25_Chew Yi Jie_Marcus Ong Yih_Archive.xpr/Recreated/Recreated.srcs/sources_1/new/Oled_DRIVER_shooter.v:18]
+INFO: [Synth 8-3876] $readmem data file 'shooter_v.mem' is read successfully [C:/Users/ong1m/Downloads/Telegram Desktop/S2_25_Chew Yi Jie_Marcus Ong Yih_Archive.xpr/Recreated/Recreated.srcs/sources_1/new/Oled_DRIVER_shooter.v:19]
+INFO: [Synth 8-6157] synthesizing module 'rng_5bit' [C:/Users/ong1m/Downloads/Telegram Desktop/S2_25_Chew Yi Jie_Marcus Ong Yih_Archive.xpr/Recreated/Recreated.srcs/sources_1/new/rng_5bit.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'rng_5bit' (17#1) [C:/Users/ong1m/Downloads/Telegram Desktop/S2_25_Chew Yi Jie_Marcus Ong Yih_Archive.xpr/Recreated/Recreated.srcs/sources_1/new/rng_5bit.v:4]
+WARNING: [Synth 8-6090] variable 'pBeam_fire_timer' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/ong1m/Downloads/Telegram Desktop/S2_25_Chew Yi Jie_Marcus Ong Yih_Archive.xpr/Recreated/Recreated.srcs/sources_1/new/Oled_DRIVER_shooter.v:255]
+WARNING: [Synth 8-6090] variable 'D1_interval' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/ong1m/Downloads/Telegram Desktop/S2_25_Chew Yi Jie_Marcus Ong Yih_Archive.xpr/Recreated/Recreated.srcs/sources_1/new/Oled_DRIVER_shooter.v:385]
+WARNING: [Synth 8-6090] variable 'D2_interval' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/ong1m/Downloads/Telegram Desktop/S2_25_Chew Yi Jie_Marcus Ong Yih_Archive.xpr/Recreated/Recreated.srcs/sources_1/new/Oled_DRIVER_shooter.v:396]
+WARNING: [Synth 8-6090] variable 'S_interval' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/ong1m/Downloads/Telegram Desktop/S2_25_Chew Yi Jie_Marcus Ong Yih_Archive.xpr/Recreated/Recreated.srcs/sources_1/new/Oled_DRIVER_shooter.v:407]
+WARNING: [Synth 8-6090] variable 'H_interval' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/ong1m/Downloads/Telegram Desktop/S2_25_Chew Yi Jie_Marcus Ong Yih_Archive.xpr/Recreated/Recreated.srcs/sources_1/new/Oled_DRIVER_shooter.v:439]
+WARNING: [Synth 8-6090] variable 'W_interval' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/ong1m/Downloads/Telegram Desktop/S2_25_Chew Yi Jie_Marcus Ong Yih_Archive.xpr/Recreated/Recreated.srcs/sources_1/new/Oled_DRIVER_shooter.v:450]
+WARNING: [Synth 8-6090] variable 'beam_interval' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/ong1m/Downloads/Telegram Desktop/S2_25_Chew Yi Jie_Marcus Ong Yih_Archive.xpr/Recreated/Recreated.srcs/sources_1/new/Oled_DRIVER_shooter.v:466]
+WARNING: [Synth 8-6090] variable 'W_interval' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/ong1m/Downloads/Telegram Desktop/S2_25_Chew Yi Jie_Marcus Ong Yih_Archive.xpr/Recreated/Recreated.srcs/sources_1/new/Oled_DRIVER_shooter.v:475]
+WARNING: [Synth 8-6090] variable 'beam_interval' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/ong1m/Downloads/Telegram Desktop/S2_25_Chew Yi Jie_Marcus Ong Yih_Archive.xpr/Recreated/Recreated.srcs/sources_1/new/Oled_DRIVER_shooter.v:476]
+WARNING: [Synth 8-6090] variable 'title_timer' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/ong1m/Downloads/Telegram Desktop/S2_25_Chew Yi Jie_Marcus Ong Yih_Archive.xpr/Recreated/Recreated.srcs/sources_1/new/Oled_DRIVER_shooter.v:537]
+WARNING: [Synth 8-6090] variable 'hold_C' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/ong1m/Downloads/Telegram Desktop/S2_25_Chew Yi Jie_Marcus Ong Yih_Archive.xpr/Recreated/Recreated.srcs/sources_1/new/Oled_DRIVER_shooter.v:538]
+WARNING: [Synth 8-6014] Unused sequential element oled_title_reg was removed.  [C:/Users/ong1m/Downloads/Telegram Desktop/S2_25_Chew Yi Jie_Marcus Ong Yih_Archive.xpr/Recreated/Recreated.srcs/sources_1/new/Oled_DRIVER_shooter.v:640]
+WARNING: [Synth 8-6014] Unused sequential element oled_gameover_reg was removed.  [C:/Users/ong1m/Downloads/Telegram Desktop/S2_25_Chew Yi Jie_Marcus Ong Yih_Archive.xpr/Recreated/Recreated.srcs/sources_1/new/Oled_DRIVER_shooter.v:641]
+WARNING: [Synth 8-6014] Unused sequential element oled_victory_reg was removed.  [C:/Users/ong1m/Downloads/Telegram Desktop/S2_25_Chew Yi Jie_Marcus Ong Yih_Archive.xpr/Recreated/Recreated.srcs/sources_1/new/Oled_DRIVER_shooter.v:642]
+WARNING: [Synth 8-6014] Unused sequential element oled_game_reg was removed.  [C:/Users/ong1m/Downloads/Telegram Desktop/S2_25_Chew Yi Jie_Marcus Ong Yih_Archive.xpr/Recreated/Recreated.srcs/sources_1/new/Oled_DRIVER_shooter.v:643]
+INFO: [Synth 8-6155] done synthesizing module 'Oled_DRIVER_shooter' (18#1) [C:/Users/ong1m/Downloads/Telegram Desktop/S2_25_Chew Yi Jie_Marcus Ong Yih_Archive.xpr/Recreated/Recreated.srcs/sources_1/new/Oled_DRIVER_shooter.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Oled_DRIVER_pong' [C:/Users/ong1m/Downloads/Telegram Desktop/S2_25_Chew Yi Jie_Marcus Ong Yih_Archive.xpr/Recreated/Recreated.srcs/sources_1/new/Oled_DRIVER_pong.v:3]
+INFO: [Synth 8-3876] $readmem data file 'pong-win.mem' is read successfully [C:/Users/ong1m/Downloads/Telegram Desktop/S2_25_Chew Yi Jie_Marcus Ong Yih_Archive.xpr/Recreated/Recreated.srcs/sources_1/new/Oled_DRIVER_pong.v:44]
+INFO: [Synth 8-3876] $readmem data file 'spongebob.mem' is read successfully [C:/Users/ong1m/Downloads/Telegram Desktop/S2_25_Chew Yi Jie_Marcus Ong Yih_Archive.xpr/Recreated/Recreated.srcs/sources_1/new/Oled_DRIVER_pong.v:45]
+WARNING: [Synth 8-6090] variable 'title_timer' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/ong1m/Downloads/Telegram Desktop/S2_25_Chew Yi Jie_Marcus Ong Yih_Archive.xpr/Recreated/Recreated.srcs/sources_1/new/Oled_DRIVER_pong.v:108]
+WARNING: [Synth 8-6090] variable 'hold_C' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/ong1m/Downloads/Telegram Desktop/S2_25_Chew Yi Jie_Marcus Ong Yih_Archive.xpr/Recreated/Recreated.srcs/sources_1/new/Oled_DRIVER_pong.v:109]
+WARNING: [Synth 8-6014] Unused sequential element oled_title_reg was removed.  [C:/Users/ong1m/Downloads/Telegram Desktop/S2_25_Chew Yi Jie_Marcus Ong Yih_Archive.xpr/Recreated/Recreated.srcs/sources_1/new/Oled_DRIVER_pong.v:136]
+WARNING: [Synth 8-6014] Unused sequential element oled_gameover_reg was removed.  [C:/Users/ong1m/Downloads/Telegram Desktop/S2_25_Chew Yi Jie_Marcus Ong Yih_Archive.xpr/Recreated/Recreated.srcs/sources_1/new/Oled_DRIVER_pong.v:137]
+WARNING: [Synth 8-6014] Unused sequential element oled_win_reg was removed.  [C:/Users/ong1m/Downloads/Telegram Desktop/S2_25_Chew Yi Jie_Marcus Ong Yih_Archive.xpr/Recreated/Recreated.srcs/sources_1/new/Oled_DRIVER_pong.v:138]
+WARNING: [Synth 8-6014] Unused sequential element oled_game_reg was removed.  [C:/Users/ong1m/Downloads/Telegram Desktop/S2_25_Chew Yi Jie_Marcus Ong Yih_Archive.xpr/Recreated/Recreated.srcs/sources_1/new/Oled_DRIVER_pong.v:139]
+INFO: [Synth 8-6155] done synthesizing module 'Oled_DRIVER_pong' (19#1) [C:/Users/ong1m/Downloads/Telegram Desktop/S2_25_Chew Yi Jie_Marcus Ong Yih_Archive.xpr/Recreated/Recreated.srcs/sources_1/new/Oled_DRIVER_pong.v:3]
+WARNING: [Synth 8-689] width (3) of port connection 'display_flag' does not match port width (2) of module 'Oled_DRIVER_pong' [C:/Users/ong1m/Downloads/Telegram Desktop/S2_25_Chew Yi Jie_Marcus Ong Yih_Archive.xpr/Recreated/Recreated.srcs/sources_1/imports/new/Top_Student.v:102]
+INFO: [Synth 8-6157] synthesizing module 'Oled_DRIVER_towerdef' [C:/Users/ong1m/Downloads/Telegram Desktop/S2_25_Chew Yi Jie_Marcus Ong Yih_Archive.xpr/Recreated/Recreated.srcs/sources_1/new/Oled_DRIVER_towerdef.v:3]
+INFO: [Synth 8-3876] $readmem data file 'towerdef_lose.mem' is read successfully [C:/Users/ong1m/Downloads/Telegram Desktop/S2_25_Chew Yi Jie_Marcus Ong Yih_Archive.xpr/Recreated/Recreated.srcs/sources_1/new/Oled_DRIVER_towerdef.v:126]
+INFO: [Synth 8-3876] $readmem data file 'towerdef_win.mem' is read successfully [C:/Users/ong1m/Downloads/Telegram Desktop/S2_25_Chew Yi Jie_Marcus Ong Yih_Archive.xpr/Recreated/Recreated.srcs/sources_1/new/Oled_DRIVER_towerdef.v:127]
+INFO: [Synth 8-3876] $readmem data file 'towerdef_bg.mem' is read successfully [C:/Users/ong1m/Downloads/Telegram Desktop/S2_25_Chew Yi Jie_Marcus Ong Yih_Archive.xpr/Recreated/Recreated.srcs/sources_1/new/Oled_DRIVER_towerdef.v:128]
+INFO: [Synth 8-6157] synthesizing module 'rng_6bit_2' [C:/Users/ong1m/Downloads/Telegram Desktop/S2_25_Chew Yi Jie_Marcus Ong Yih_Archive.xpr/Recreated/Recreated.srcs/sources_1/new/rng_6bit_2.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'rng_6bit_2' (20#1) [C:/Users/ong1m/Downloads/Telegram Desktop/S2_25_Chew Yi Jie_Marcus Ong Yih_Archive.xpr/Recreated/Recreated.srcs/sources_1/new/rng_6bit_2.v:4]
+INFO: [Synth 8-6157] synthesizing module 'rng_6bit_3' [C:/Users/ong1m/Downloads/Telegram Desktop/S2_25_Chew Yi Jie_Marcus Ong Yih_Archive.xpr/Recreated/Recreated.srcs/sources_1/new/rng_6bit_3.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'rng_6bit_3' (21#1) [C:/Users/ong1m/Downloads/Telegram Desktop/S2_25_Chew Yi Jie_Marcus Ong Yih_Archive.xpr/Recreated/Recreated.srcs/sources_1/new/rng_6bit_3.v:4]
+WARNING: [Synth 8-6090] variable 'forcefield_counter' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/ong1m/Downloads/Telegram Desktop/S2_25_Chew Yi Jie_Marcus Ong Yih_Archive.xpr/Recreated/Recreated.srcs/sources_1/new/Oled_DRIVER_towerdef.v:155]
+WARNING: [Synth 8-6090] variable 'forcefield_gen' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/ong1m/Downloads/Telegram Desktop/S2_25_Chew Yi Jie_Marcus Ong Yih_Archive.xpr/Recreated/Recreated.srcs/sources_1/new/Oled_DRIVER_towerdef.v:156]
+WARNING: [Synth 8-6090] variable 'forcefield_flag' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/ong1m/Downloads/Telegram Desktop/S2_25_Chew Yi Jie_Marcus Ong Yih_Archive.xpr/Recreated/Recreated.srcs/sources_1/new/Oled_DRIVER_towerdef.v:158]
+WARNING: [Synth 8-6090] variable 'forcefield_gen' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/ong1m/Downloads/Telegram Desktop/S2_25_Chew Yi Jie_Marcus Ong Yih_Archive.xpr/Recreated/Recreated.srcs/sources_1/new/Oled_DRIVER_towerdef.v:159]
+WARNING: [Synth 8-6090] variable 'forcefield_duration' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/ong1m/Downloads/Telegram Desktop/S2_25_Chew Yi Jie_Marcus Ong Yih_Archive.xpr/Recreated/Recreated.srcs/sources_1/new/Oled_DRIVER_towerdef.v:162]
+WARNING: [Synth 8-6090] variable 'enemy2_delay' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/ong1m/Downloads/Telegram Desktop/S2_25_Chew Yi Jie_Marcus Ong Yih_Archive.xpr/Recreated/Recreated.srcs/sources_1/new/Oled_DRIVER_towerdef.v:165]
+WARNING: [Synth 8-6090] variable 'enemy3_delay' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/ong1m/Downloads/Telegram Desktop/S2_25_Chew Yi Jie_Marcus Ong Yih_Archive.xpr/Recreated/Recreated.srcs/sources_1/new/Oled_DRIVER_towerdef.v:166]
+WARNING: [Synth 8-6090] variable 'enemy_posY' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/ong1m/Downloads/Telegram Desktop/S2_25_Chew Yi Jie_Marcus Ong Yih_Archive.xpr/Recreated/Recreated.srcs/sources_1/new/Oled_DRIVER_towerdef.v:168]
+WARNING: [Synth 8-6090] variable 'enemy_posX' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/ong1m/Downloads/Telegram Desktop/S2_25_Chew Yi Jie_Marcus Ong Yih_Archive.xpr/Recreated/Recreated.srcs/sources_1/new/Oled_DRIVER_towerdef.v:169]
+WARNING: [Synth 8-6090] variable 'enemy2_posY' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/ong1m/Downloads/Telegram Desktop/S2_25_Chew Yi Jie_Marcus Ong Yih_Archive.xpr/Recreated/Recreated.srcs/sources_1/new/Oled_DRIVER_towerdef.v:171]
+WARNING: [Synth 8-6090] variable 'enemy2_posX' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/ong1m/Downloads/Telegram Desktop/S2_25_Chew Yi Jie_Marcus Ong Yih_Archive.xpr/Recreated/Recreated.srcs/sources_1/new/Oled_DRIVER_towerdef.v:173]
+WARNING: [Synth 8-6090] variable 'enemy3_posY' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/ong1m/Downloads/Telegram Desktop/S2_25_Chew Yi Jie_Marcus Ong Yih_Archive.xpr/Recreated/Recreated.srcs/sources_1/new/Oled_DRIVER_towerdef.v:175]
+WARNING: [Synth 8-6090] variable 'enemy3_posX' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/ong1m/Downloads/Telegram Desktop/S2_25_Chew Yi Jie_Marcus Ong Yih_Archive.xpr/Recreated/Recreated.srcs/sources_1/new/Oled_DRIVER_towerdef.v:177]
+WARNING: [Synth 8-6090] variable 'title_timer' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/ong1m/Downloads/Telegram Desktop/S2_25_Chew Yi Jie_Marcus Ong Yih_Archive.xpr/Recreated/Recreated.srcs/sources_1/new/Oled_DRIVER_towerdef.v:198]
+WARNING: [Synth 8-6090] variable 'hold_L' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/ong1m/Downloads/Telegram Desktop/S2_25_Chew Yi Jie_Marcus Ong Yih_Archive.xpr/Recreated/Recreated.srcs/sources_1/new/Oled_DRIVER_towerdef.v:199]
+WARNING: [Synth 8-6014] Unused sequential element oled_title_reg was removed.  [C:/Users/ong1m/Downloads/Telegram Desktop/S2_25_Chew Yi Jie_Marcus Ong Yih_Archive.xpr/Recreated/Recreated.srcs/sources_1/new/Oled_DRIVER_towerdef.v:313]
+WARNING: [Synth 8-6014] Unused sequential element oled_gameover_reg was removed.  [C:/Users/ong1m/Downloads/Telegram Desktop/S2_25_Chew Yi Jie_Marcus Ong Yih_Archive.xpr/Recreated/Recreated.srcs/sources_1/new/Oled_DRIVER_towerdef.v:315]
+WARNING: [Synth 8-6014] Unused sequential element oled_win_reg was removed.  [C:/Users/ong1m/Downloads/Telegram Desktop/S2_25_Chew Yi Jie_Marcus Ong Yih_Archive.xpr/Recreated/Recreated.srcs/sources_1/new/Oled_DRIVER_towerdef.v:316]
+WARNING: [Synth 8-6014] Unused sequential element oled_bg_reg was removed.  [C:/Users/ong1m/Downloads/Telegram Desktop/S2_25_Chew Yi Jie_Marcus Ong Yih_Archive.xpr/Recreated/Recreated.srcs/sources_1/new/Oled_DRIVER_towerdef.v:317]
+WARNING: [Synth 8-6014] Unused sequential element oled_game_reg was removed.  [C:/Users/ong1m/Downloads/Telegram Desktop/S2_25_Chew Yi Jie_Marcus Ong Yih_Archive.xpr/Recreated/Recreated.srcs/sources_1/new/Oled_DRIVER_towerdef.v:318]
+INFO: [Synth 8-6155] done synthesizing module 'Oled_DRIVER_towerdef' (22#1) [C:/Users/ong1m/Downloads/Telegram Desktop/S2_25_Chew Yi Jie_Marcus Ong Yih_Archive.xpr/Recreated/Recreated.srcs/sources_1/new/Oled_DRIVER_towerdef.v:3]
+WARNING: [Synth 8-689] width (3) of port connection 'display_flag' does not match port width (2) of module 'Oled_DRIVER_towerdef' [C:/Users/ong1m/Downloads/Telegram Desktop/S2_25_Chew Yi Jie_Marcus Ong Yih_Archive.xpr/Recreated/Recreated.srcs/sources_1/imports/new/Top_Student.v:104]
+WARNING: [Synth 8-3848] Net reset in module/entity Top_Student does not have driver. [C:/Users/ong1m/Downloads/Telegram Desktop/S2_25_Chew Yi Jie_Marcus Ong Yih_Archive.xpr/Recreated/Recreated.srcs/sources_1/imports/new/Top_Student.v:41]
+INFO: [Synth 8-6155] done synthesizing module 'Top_Student' (23#1) [C:/Users/ong1m/Downloads/Telegram Desktop/S2_25_Chew Yi Jie_Marcus Ong Yih_Archive.xpr/Recreated/Recreated.srcs/sources_1/imports/new/Top_Student.v:18]
+WARNING: [Synth 8-3331] design Top_Student has unconnected port JC[2]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 531.270 ; gain = 275.008
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin OLED:reset to constant 0 [C:/Users/ong1m/Downloads/Telegram Desktop/S2_25_Chew Yi Jie_Marcus Ong Yih_Archive.xpr/Recreated/Recreated.srcs/sources_1/imports/new/Top_Student.v:69]
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 531.270 ; gain = 275.008
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 531.270 ; gain = 275.008
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/ong1m/Downloads/Telegram Desktop/S2_25_Chew Yi Jie_Marcus Ong Yih_Archive.xpr/Recreated/Recreated.srcs/constrs_1/imports/new/Basys3_Master.xdc]
+Finished Parsing XDC File [C:/Users/ong1m/Downloads/Telegram Desktop/S2_25_Chew Yi Jie_Marcus Ong Yih_Archive.xpr/Recreated/Recreated.srcs/constrs_1/imports/new/Basys3_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/ong1m/Downloads/Telegram Desktop/S2_25_Chew Yi Jie_Marcus Ong Yih_Archive.xpr/Recreated/Recreated.srcs/constrs_1/imports/new/Basys3_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Top_Student_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Top_Student_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 866.105 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 866.105 ; gain = 609.844
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 866.105 ; gain = 609.844
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 866.105 ; gain = 609.844
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "max0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "max0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'Oled_Display'
+INFO: [Synth 8-5546] ROM "fsm_next_state0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "fsm_next_state0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "fsm_next_state0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "ones" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "ones" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "tens" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "tens" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "hundreds" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "thousands" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "forcefields" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'offset_reg' in module 'menu_oled'
+INFO: [Synth 8-5544] ROM "offset0" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "secret" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "secret_stage" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "secret_delay" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "select_flag" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "hold_C" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "hold_C" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "exit_AUDVIS" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exit_SBR" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "shiba_jump" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "shiba_anim_state0" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "oled_SBR" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "p_6_in" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exit_SBR" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "shiba_jump" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "shiba_anim_state0" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "oled_SBR" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "p_6_in" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "shiba_height2" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "shiba_jump_clock0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "obstaclespeed" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "diff_mult" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "oled_SBR8" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/ong1m/Downloads/Telegram Desktop/S2_25_Chew Yi Jie_Marcus Ong Yih_Archive.xpr/Recreated/Recreated.srcs/sources_1/new/Oled_DRIVER_shooter.v:280]
+INFO: [Synth 8-5546] ROM "exit_shooter" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "SA" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "SA" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "SA" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "SA" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "SA" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "SA" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "HA" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "HA" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pBeamcharges" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pBeamarm" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pBeammarkerA" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pBeammarkerA" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pBeamA" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "beamA" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "beamA" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "D1X0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "D1X3" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "D2X0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "D2X3" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "SX0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "SX1" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "SX2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "SX3" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "SX4" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "SX5" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "WX0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "WX4" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "WX8" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "HX0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "HX1" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "beam_warningA" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "jet_fire_timer" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "PBY0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "PBY1" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "PBY2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "PBY3" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "PBY4" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "PBY5" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "PBY6" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "PBY7" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "PBY8" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "PBY9" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "hitbeam" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exit_pong" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "oled_PONG" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "exit_pong" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "oled_PONG" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "oled_PONG5" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "exit_towerdef" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "forcefield_flag0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "hit" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "hit2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "hit3" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "oled_towerdef" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "oled_game0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "exit_towerdef" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "forcefield_flag0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "hit" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "hit2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "hit3" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "oled_towerdef" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "oled_game0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enemy_speed" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "health_col0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "oled_towerdef6" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 PowerUp | 00000000100000000000000000000000 |                            00000
+                   Reset | 00000000000100000000000000000000 |                            00001
+            ReleaseReset | 00000000000000000000100000000000 |                            00011
+            EnableDriver | 00000000000000000001000000000000 |                            00010
+              DisplayOff | 00000000000000000100000000000000 |                            00110
+   SetRemapDisplayFormat | 00000100000000000000000000000000 |                            00111
+            SetStartLine | 00001000000000000000000000000000 |                            00101
+               SetOffset | 10000000000000000000000000000000 |                            00100
+        SetNormalDisplay | 00000000000000000000000010000000 |                            01100
+       SetMultiplexRatio | 00000000000000000000000000100000 |                            01101
+  SetMasterConfiguration | 00000000000000000000000001000000 |                            01111
+        DisablePowerSave | 00000000000000000000000000000100 |                            01110
+          SetPhaseAdjust | 00000000000000000000000000001000 |                            01010
+         SetDisplayClock | 00000000001000000000000000000000 |                            01011
+     SetSecondPrechargeA | 00000000010000000000000000000000 |                            01001
+     SetSecondPrechargeB | 01000000000000000000000000000000 |                            01000
+     SetSecondPrechargeC | 00000010000000000000000000000000 |                            11000
+       SetPrechargeLevel | 00000001000000000000000000000000 |                            11001
+                SetVCOMH | 00000000000000010000000000000000 |                            11011
+        SetMasterCurrent | 00000000000000100000000000000000 |                            11010
+            SetContrastA | 00000000000001000000000000000000 |                            11110
+            SetContrastB | 00100000000000000000000000000000 |                            11111
+            SetContrastC | 00000000000000000000000000000001 |                            11101
+        DisableScrolling | 00000000000000000000000000000010 |                            11100
+             ClearScreen | 00000000000000000000000000010000 |                            10100
+                   VccEn | 00010000000000000000000000000000 |                            10101
+               DisplayOn | 00000000000010000000000000000000 |                            10111
+        PrepareNextFrame | 00000000000000001000000000000000 |                            10110
+           SetColAddress | 00000000000000000000010000000000 |                            10010
+           SetRowAddress | 00000000000000000000000100000000 |                            10011
+           WaitNextFrame | 00000000000000000000001000000000 |                            10001
+               SendPixel | 00000000000000000010000000000000 |                            10000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'Oled_Display'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE0 |                                0 |                               00
+                  iSTATE |                                1 |                               11
+*
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'offset_reg' using encoding 'sequential' in module 'menu_oled'
+WARNING: [Synth 8-327] inferring latch for variable 'bar_data_reg' [C:/Users/ong1m/Downloads/Telegram Desktop/S2_25_Chew Yi Jie_Marcus Ong Yih_Archive.xpr/Recreated/Recreated.srcs/sources_1/imports/new/volume_bar_oled.v:165]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 866.105 ; gain = 609.844
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'SBR/rng6x' (rng_6bit) to 'SBR/rng3x'
+
+Report RTL Partitions: 
++------+-------------------------+------------+----------+
+|      |RTL Partition            |Replication |Instances |
++------+-------------------------+------------+----------+
+|1     |Oled_DRIVER_shooter__GB0 |           1|     33541|
+|2     |Oled_DRIVER_shooter__GB1 |           1|      9125|
+|3     |Top_Student__GCB0        |           1|     31520|
+|4     |Top_Student__GCB1        |           1|     16022|
+|5     |Top_Student__GCB2        |           1|     13818|
++------+-------------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 96    
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input     17 Bit       Adders := 1     
+	  21 Input     11 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 1     
+	   7 Input     11 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 2     
+	   2 Input      9 Bit       Adders := 9     
+	   3 Input      9 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 156   
+	   3 Input      8 Bit       Adders := 2     
+	   2 Input      7 Bit       Adders := 94    
+	   3 Input      7 Bit       Adders := 15    
+	   4 Input      7 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 25    
+	   2 Input      5 Bit       Adders := 14    
+	   2 Input      4 Bit       Adders := 4     
+	   2 Input      3 Bit       Adders := 2     
+	   2 Input      2 Bit       Adders := 3     
++---XORs : 
+	   5 Input      1 Bit         XORs := 1     
+	   6 Input      1 Bit         XORs := 2     
+	   2 Input      1 Bit         XORs := 2     
+	   3 Input      1 Bit         XORs := 2     
++---Registers : 
+	               40 Bit    Registers := 1     
+	               17 Bit    Registers := 1     
+	               16 Bit    Registers := 14    
+	               12 Bit    Registers := 4     
+	               11 Bit    Registers := 2     
+	               10 Bit    Registers := 4     
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 6     
+	                7 Bit    Registers := 103   
+	                6 Bit    Registers := 28    
+	                5 Bit    Registers := 14    
+	                4 Bit    Registers := 3     
+	                3 Bit    Registers := 5     
+	                2 Bit    Registers := 14    
+	                1 Bit    Registers := 108   
++---Muxes : 
+	   2 Input     40 Bit        Muxes := 3     
+	  32 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 2     
+	  32 Input     20 Bit        Muxes := 1     
+	   2 Input     17 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 57    
+	   4 Input     16 Bit        Muxes := 9     
+	   7 Input     16 Bit        Muxes := 1     
+	   5 Input     16 Bit        Muxes := 3     
+	   6 Input     16 Bit        Muxes := 1     
+	  17 Input     16 Bit        Muxes := 1     
+	   2 Input     15 Bit        Muxes := 1     
+	   4 Input     15 Bit        Muxes := 1     
+	   2 Input     14 Bit        Muxes := 5     
+	   2 Input     13 Bit        Muxes := 1     
+	   3 Input     13 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 9     
+	   3 Input     12 Bit        Muxes := 5     
+	   2 Input     11 Bit        Muxes := 18    
+	   2 Input     10 Bit        Muxes := 9     
+	   2 Input      9 Bit        Muxes := 5     
+	   3 Input      9 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 32    
+	   3 Input      8 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 158   
+	  18 Input      7 Bit        Muxes := 2     
+	   3 Input      7 Bit        Muxes := 2     
+	   4 Input      7 Bit        Muxes := 7     
+	   8 Input      7 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 104   
+	  32 Input      6 Bit        Muxes := 1     
+	   4 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 42    
+	  32 Input      5 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 31    
+	   3 Input      4 Bit        Muxes := 4     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 13    
+	   5 Input      3 Bit        Muxes := 1     
+	   9 Input      3 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 65    
+	   5 Input      2 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	  18 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 366   
+	   3 Input      1 Bit        Muxes := 17    
+	   4 Input      1 Bit        Muxes := 12    
+	   5 Input      1 Bit        Muxes := 1     
+	  19 Input      1 Bit        Muxes := 1     
+	  13 Input      1 Bit        Muxes := 2     
+	  12 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Top_Student 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+Module DFF__1 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module DFF__2 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module debounced_button__1 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module rng_5bit 
+Detailed RTL Component Info : 
++---XORs : 
+	   5 Input      1 Bit         XORs := 1     
++---Registers : 
+	                5 Bit    Registers := 1     
+Module Oled_DRIVER_shooter 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 78    
+	  21 Input     11 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 132   
+	   2 Input      7 Bit       Adders := 67    
+	   3 Input      7 Bit       Adders := 6     
+	   4 Input      7 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 5     
+	   2 Input      5 Bit       Adders := 3     
++---Registers : 
+	               16 Bit    Registers := 1     
+	               12 Bit    Registers := 1     
+	               11 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                7 Bit    Registers := 87    
+	                6 Bit    Registers := 8     
+	                5 Bit    Registers := 3     
+	                2 Bit    Registers := 11    
+	                1 Bit    Registers := 14    
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 14    
+	   4 Input     16 Bit        Muxes := 1     
+	   7 Input     16 Bit        Muxes := 1     
+	   2 Input     13 Bit        Muxes := 1     
+	   3 Input     13 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 9     
+	   2 Input     11 Bit        Muxes := 13    
+	   2 Input     10 Bit        Muxes := 2     
+	   2 Input      9 Bit        Muxes := 5     
+	   3 Input      9 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 11    
+	   3 Input      8 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 87    
+	   2 Input      6 Bit        Muxes := 42    
+	   2 Input      5 Bit        Muxes := 7     
+	   2 Input      4 Bit        Muxes := 6     
+	   2 Input      3 Bit        Muxes := 4     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 60    
+	   2 Input      1 Bit        Muxes := 218   
+	   3 Input      1 Bit        Muxes := 11    
+	   4 Input      1 Bit        Muxes := 10    
+Module Oled_Display 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     17 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
++---Registers : 
+	               40 Bit    Registers := 1     
+	               17 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     40 Bit        Muxes := 3     
+	  32 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 2     
+	  32 Input     20 Bit        Muxes := 1     
+	   2 Input     17 Bit        Muxes := 1     
+	  32 Input      6 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 2     
+	  32 Input      5 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+Module slowclock__1 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module slowclock__2 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module DFF__3 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module DFF__18 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module debounced_button__9 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module Oled_DRIVER_pong 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 8     
+	   2 Input      9 Bit       Adders := 8     
+	   2 Input      8 Bit       Adders := 4     
+	   3 Input      8 Bit       Adders := 2     
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 4     
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 9     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 2     
+	   5 Input     16 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 21    
+	   2 Input      6 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 3     
+	   2 Input      3 Bit        Muxes := 3     
+	   5 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 28    
+	   3 Input      1 Bit        Muxes := 1     
+Module slowclock__3 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module DFF__15 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module DFF__14 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module debounced_button__7 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module DFF__17 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module DFF__16 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module debounced_button__8 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module rng_6bit__1 
+Detailed RTL Component Info : 
++---XORs : 
+	   6 Input      1 Bit         XORs := 1     
++---Registers : 
+	                6 Bit    Registers := 1     
+Module Oled_DRIVER_shibarun 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 9     
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 14    
+	   3 Input      7 Bit       Adders := 6     
+	   2 Input      7 Bit       Adders := 5     
+	   2 Input      6 Bit       Adders := 3     
+	   2 Input      5 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
+	                7 Bit    Registers := 4     
+	                6 Bit    Registers := 6     
+	                5 Bit    Registers := 2     
+	                3 Bit    Registers := 2     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 8     
+	   2 Input     15 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 41    
+	   2 Input      6 Bit        Muxes := 14    
+	   4 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 4     
+	   2 Input      3 Bit        Muxes := 5     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 26    
+	   4 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+Module DFF__5 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module DFF__4 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module debounced_button__2 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module DFF__7 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module DFF__6 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module debounced_button__3 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module DFF__9 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module DFF__8 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module debounced_button__4 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module DFF__11 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module DFF__10 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module debounced_button__5 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module DFF__13 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module DFF__12 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module debounced_button__6 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module menu_oled 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      7 Bit       Adders := 8     
+	   2 Input      6 Bit       Adders := 3     
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 3     
+	   2 Input      3 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 8     
+	   4 Input     16 Bit        Muxes := 4     
+	   5 Input     16 Bit        Muxes := 1     
+	   2 Input     14 Bit        Muxes := 4     
+	   3 Input     12 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 5     
+Module Oled_DRIVER_menu 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 25    
+	   3 Input      4 Bit        Muxes := 4     
+	   2 Input      3 Bit        Muxes := 1     
+	   9 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
+	   3 Input      1 Bit        Muxes := 1     
+Module Oled_DRIVER_main 
+Detailed RTL Component Info : 
++---Registers : 
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   4 Input     16 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 2     
+Module rng_6bit 
+Detailed RTL Component Info : 
++---XORs : 
+	   6 Input      1 Bit         XORs := 1     
++---Registers : 
+	                6 Bit    Registers := 1     
+Module rng_6bit_2 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
+	   3 Input      1 Bit         XORs := 1     
++---Registers : 
+	                6 Bit    Registers := 1     
+Module rng_6bit_3 
+Detailed RTL Component Info : 
++---XORs : 
+	   3 Input      1 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	                6 Bit    Registers := 1     
+Module DFF__21 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module DFF__20 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module debounced_button__10 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module DFF__23 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module DFF__22 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module debounced_button__11 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module DFF__25 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module DFF__24 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module debounced_button__12 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module DFF__19 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module DFF__26 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module debounced_button__13 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module Oled_DRIVER_towerdef 
+Detailed RTL Component Info : 
++---Adders : 
+	   7 Input     11 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 3     
+	   2 Input      7 Bit       Adders := 7     
+	   2 Input      6 Bit       Adders := 9     
+	   2 Input      5 Bit       Adders := 2     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	               11 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
+	                7 Bit    Registers := 4     
+	                6 Bit    Registers := 7     
+	                5 Bit    Registers := 2     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 17    
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 14    
+	   4 Input     16 Bit        Muxes := 1     
+	   6 Input     16 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 5     
+	   2 Input     10 Bit        Muxes := 6     
+	   2 Input      7 Bit        Muxes := 20    
+	   2 Input      6 Bit        Muxes := 42    
+	   2 Input      5 Bit        Muxes := 9     
+	   2 Input      2 Bit        Muxes := 2     
+	   5 Input      2 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 65    
+	   4 Input      1 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 2     
+Module Audio_Capture 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
+Module segment_driver 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                7 Bit    Registers := 7     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
++---Muxes : 
+	  18 Input      7 Bit        Muxes := 2     
+	   2 Input      7 Bit        Muxes := 7     
+	   3 Input      7 Bit        Muxes := 2     
+	   4 Input      7 Bit        Muxes := 7     
+	   8 Input      7 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	  18 Input      2 Bit        Muxes := 1     
+	  19 Input      1 Bit        Muxes := 1     
+	  13 Input      1 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+	  12 Input      1 Bit        Muxes := 2     
+Module max_vol 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 2     
+	               12 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
++---Muxes : 
+	  17 Input     16 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module Oled_Border 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      7 Bit       Adders := 2     
++---Muxes : 
+	   5 Input     16 Bit        Muxes := 1     
+Module DFF__29 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module DFF__28 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module debounced_button__14 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module DFF__31 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module DFF__30 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module debounced_button__15 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module DFF__33 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module DFF__32 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module debounced_button__16 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module DFF__35 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module DFF__34 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module debounced_button__17 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module DFF__27 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module DFF 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module debounced_button 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module volume_bar_oled 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 1     
+	   3 Input      9 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 3     
+	   3 Input      7 Bit       Adders := 3     
+	   2 Input      7 Bit       Adders := 3     
+	   2 Input      6 Bit       Adders := 3     
+	   2 Input      5 Bit       Adders := 5     
++---Registers : 
+	               16 Bit    Registers := 8     
+	                7 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 5     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 7     
+	   4 Input     16 Bit        Muxes := 2     
+	   4 Input     15 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 3     
+	   2 Input      6 Bit        Muxes := 3     
+	   2 Input      5 Bit        Muxes := 17    
+	   2 Input      1 Bit        Muxes := 16    
+	   3 Input      1 Bit        Muxes := 1     
+Module Oled_DRIVER_visualiser 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      7 Bit       Adders := 2     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input     14 Bit        Muxes := 1     
+	   3 Input     12 Bit        Muxes := 1     
+Module slowclock__4 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module slowclock__5 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module slowclock 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5546] ROM "beamA" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "beamA" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "HX0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "HX1" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "HA" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "HA" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "WX0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "beam_warningA" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "WX4" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "WX8" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "WA" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "WA" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "WA" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "D1A" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "D1A" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "D2A" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "D2A" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "OLED/fsm_next_state0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "OLED/fsm_next_state0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "oled_game0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "max0" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-3331] design Top_Student has unconnected port JC[2]
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (nolabel_line100i_3/D1X00_inferred/\D1X0_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (nolabel_line100i_3/D1X20_inferred/\D1X2_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (nolabel_line100i_3/D2X40_inferred/\D2X4_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (nolabel_line100i_3/WX10_inferred/\WX1_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (nolabel_line100i_3/WX30_inferred/\WX3_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (nolabel_line100i_3/WX40_inferred/\WX4_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (nolabel_line100i_3/WX50_inferred/\WX5_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (nolabel_line100i_3/WX90_inferred/\WX9_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (nolabel_line100i_4/WX00_inferred/\WX0_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (nolabel_line100i_4/WX20_inferred/\WX2_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (nolabel_line100i_4/D1X50_inferred/\D1X5_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (nolabel_line100i_4/D1X40_inferred/\D1X4_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (nolabel_line100i_4/D1X30_inferred/\D1X3_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (nolabel_line100i_4/WX60_inferred/\WX6_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (nolabel_line100i_4/D1X10_inferred/\D1X1_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (nolabel_line100i_4/WX70_inferred/\WX7_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (nolabel_line100i_4/WX80_inferred/\WX8_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (nolabel_line100i_4/WX100_inferred/\WX10_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (nolabel_line100i_4/WX110_inferred/\WX11_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (nolabel_line100i_4/D2X00_inferred/\D2X0_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (nolabel_line100i_4/D2X50_inferred/\D2X5_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (nolabel_line100i_4/D2X30_inferred/\D2X3_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (nolabel_line100i_4/D2X10_inferred/\D2X1_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (nolabel_line100i_4/D2X20_inferred/\D2X2_reg[0] )
+WARNING: [Synth 8-3332] Sequential element (shiba_vel_reg[0]) is unused and will be removed from module Oled_DRIVER_shibarun.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/TD/\enemy_speed_reg[2] )
+WARNING: [Synth 8-3332] Sequential element (enemy_speed_reg[2]) is unused and will be removed from module Oled_DRIVER_towerdef.
+INFO: [Synth 8-3886] merging instance 'i_2/SEGDRIV/forcefields_reg[0]' (FDE) to 'i_2/SEGDRIV/forcefields_reg[3]'
+INFO: [Synth 8-3886] merging instance 'i_2/SEGDRIV/level_reg[1]' (FDE) to 'i_2/SEGDRIV/level_reg[6]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line100i_4/WY0_reg[0]' (FDE) to 'nolabel_line100i_4/WY3_reg[0]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line100i_4/WY0_reg[1]' (FDE) to 'nolabel_line100i_4/WY3_reg[1]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line100i_4/WY0_reg[2]' (FDE) to 'nolabel_line100i_4/WY3_reg[2]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line100i_4/WY8_reg[0]' (FDE) to 'nolabel_line100i_4/WY11_reg[0]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line100i_4/WY8_reg[1]' (FDE) to 'nolabel_line100i_4/WY11_reg[1]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line100i_4/WY8_reg[2]' (FDE) to 'nolabel_line100i_4/WY11_reg[2]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line100i_3/WY1_reg[0]' (FDE) to 'nolabel_line100i_3/WY2_reg[0]'
+INFO: [Synth 8-3886] merging instance 'nolabel_line100i_3/WY9_reg[0]' (FDE) to 'nolabel_line100i_3/WY10_reg[0]'
+WARNING: [Synth 8-3332] Sequential element (bar_data_reg[15]) is unused and will be removed from module volume_bar_oled.
+WARNING: [Synth 8-3332] Sequential element (bar_data_reg[14]) is unused and will be removed from module volume_bar_oled.
+WARNING: [Synth 8-3332] Sequential element (bar_data_reg[13]) is unused and will be removed from module volume_bar_oled.
+WARNING: [Synth 8-3332] Sequential element (bar_data_reg[12]) is unused and will be removed from module volume_bar_oled.
+WARNING: [Synth 8-3332] Sequential element (bar_data_reg[11]) is unused and will be removed from module volume_bar_oled.
+WARNING: [Synth 8-3332] Sequential element (bar_data_reg[10]) is unused and will be removed from module volume_bar_oled.
+WARNING: [Synth 8-3332] Sequential element (bar_data_reg[9]) is unused and will be removed from module volume_bar_oled.
+WARNING: [Synth 8-3332] Sequential element (bar_data_reg[8]) is unused and will be removed from module volume_bar_oled.
+WARNING: [Synth 8-3332] Sequential element (bar_data_reg[7]) is unused and will be removed from module volume_bar_oled.
+WARNING: [Synth 8-3332] Sequential element (bar_data_reg[6]) is unused and will be removed from module volume_bar_oled.
+WARNING: [Synth 8-3332] Sequential element (bar_data_reg[5]) is unused and will be removed from module volume_bar_oled.
+WARNING: [Synth 8-3332] Sequential element (bar_data_reg[4]) is unused and will be removed from module volume_bar_oled.
+WARNING: [Synth 8-3332] Sequential element (bar_data_reg[3]) is unused and will be removed from module volume_bar_oled.
+WARNING: [Synth 8-3332] Sequential element (bar_data_reg[2]) is unused and will be removed from module volume_bar_oled.
+WARNING: [Synth 8-3332] Sequential element (bar_data_reg[1]) is unused and will be removed from module volume_bar_oled.
+WARNING: [Synth 8-3332] Sequential element (bar_data_reg[0]) is unused and will be removed from module volume_bar_oled.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:05:40 ; elapsed = 00:05:47 . Memory (MB): peak = 1540.719 ; gain = 1284.457
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++---------------------+------------+---------------+----------------+
+|Module Name          | RTL Object | Depth x Width | Implemented As | 
++---------------------+------------+---------------+----------------+
+|Oled_DRIVER_shibarun | p_0_out    | 8192x16       | LUT            | 
+|Oled_DRIVER_shibarun | p_0_out    | 8192x16       | LUT            | 
+|Oled_DRIVER_shooter  | p_0_out    | 8192x16       | LUT            | 
+|Oled_DRIVER_shooter  | p_0_out    | 8192x16       | LUT            | 
+|Oled_DRIVER_shooter  | p_0_out    | 8192x16       | LUT            | 
+|Oled_DRIVER_pong     | p_0_out    | 8192x16       | LUT            | 
+|Oled_DRIVER_pong     | p_0_out    | 8192x16       | LUT            | 
+|Oled_DRIVER_towerdef | p_0_out    | 8192x16       | LUT            | 
+|Oled_DRIVER_towerdef | p_0_out    | 8192x16       | LUT            | 
+|Oled_DRIVER_towerdef | p_0_out    | 8192x16       | LUT            | 
+|Top_Student          | p_0_out    | 8192x16       | LUT            | 
+|Top_Student          | p_0_out    | 8192x16       | LUT            | 
+|Top_Student          | p_0_out    | 8192x16       | LUT            | 
+|Oled_DRIVER_pong     | p_0_out    | 8192x16       | LUT            | 
+|Oled_DRIVER_pong     | p_0_out    | 8192x16       | LUT            | 
+|Oled_DRIVER_shibarun | p_0_out    | 8192x16       | LUT            | 
+|Oled_DRIVER_shibarun | p_0_out    | 8192x16       | LUT            | 
+|Oled_DRIVER_towerdef | p_0_out    | 8192x16       | LUT            | 
+|Oled_DRIVER_towerdef | p_0_out    | 8192x16       | LUT            | 
+|Oled_DRIVER_towerdef | p_0_out    | 8192x16       | LUT            | 
++---------------------+------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+-------------------------+------------+----------+
+|      |RTL Partition            |Replication |Instances |
++------+-------------------------+------------+----------+
+|1     |Oled_DRIVER_shooter__GB0 |           1|     17529|
+|2     |Oled_DRIVER_shooter__GB1 |           1|      2889|
+|3     |Top_Student__GCB0        |           1|     17228|
+|4     |Top_Student__GCB1        |           1|     13825|
+|5     |Top_Student__GCB2        |           1|      3907|
++------+-------------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:05:50 ; elapsed = 00:05:58 . Memory (MB): peak = 1540.719 ; gain = 1284.457
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:05:53 ; elapsed = 00:06:02 . Memory (MB): peak = 1540.719 ; gain = 1284.457
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+-------------------------+------------+----------+
+|      |RTL Partition            |Replication |Instances |
++------+-------------------------+------------+----------+
+|1     |Oled_DRIVER_shooter__GB0 |           1|     17529|
+|2     |Oled_DRIVER_shooter__GB1 |           1|      2889|
+|3     |Top_Student__GCB0        |           1|     17228|
+|4     |Top_Student__GCB1        |           1|     13825|
+|5     |Top_Student__GCB2        |           1|      3907|
++------+-------------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3332] Sequential element (nolabel_line100/PBY1_reg[0]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line100/PBY2_reg[0]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line100/PBY3_reg[0]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line100/PBY5_reg[0]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line100/PBY6_reg[0]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line100/PBY7_reg[0]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line100/PBY8_reg[0]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line100/PBY9_reg[0]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line100/PBY0_reg[0]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (nolabel_line100/PBY4_reg[0]) is unused and will be removed from module Top_Student.
+INFO: [Synth 8-3886] merging instance 'SBR/DB_U/DFF1/Q_reg' (FD) to 'TD/DB_U/DFF1/Q_reg'
+INFO: [Synth 8-3886] merging instance 'AUDVIS/VBO/DB_D/DFF1/Q_reg' (FD) to 'TD/DB_D/DFF1/Q_reg'
+INFO: [Synth 8-3886] merging instance 'AUDVIS/VBO/DB_U/DFF1/Q_reg' (FD) to 'TD/DB_U/DFF1/Q_reg'
+INFO: [Synth 8-3886] merging instance 'AUDVIS/VBO/DB_L/DFF1/Q_reg' (FD) to 'TD/DB_L/DFF1/Q_reg'
+INFO: [Synth 8-3886] merging instance 'AUDVIS/VBO/DB_R/DFF1/Q_reg' (FD) to 'MENU/DB_R/DFF1/Q_reg'
+INFO: [Synth 8-3886] merging instance 'AUDVIS/VBO/DB_C/DFF1/Q_reg' (FD) to 'TD/DB_C/DFF1/Q_reg'
+INFO: [Synth 8-3886] merging instance 'TD/DB_U/DFF2/Q_reg' (FD) to 'AUDVIS/VBO/DB_U/DFF2/Q_reg'
+INFO: [Synth 8-3886] merging instance 'TD/DB_U/DFF1/Q_reg' (FD) to 'MENU/DB_U/DFF1/Q_reg'
+INFO: [Synth 8-3886] merging instance 'TD/DB_C/DFF2/Q_reg' (FD) to 'AUDVIS/VBO/DB_C/DFF2/Q_reg'
+INFO: [Synth 8-3886] merging instance 'TD/DB_C/DFF1/Q_reg' (FD) to 'nolabel_line100/DB_C/DFF1/Q_reg'
+INFO: [Synth 8-3886] merging instance 'TD/DB_D/DFF2/Q_reg' (FD) to 'AUDVIS/VBO/DB_D/DFF2/Q_reg'
+INFO: [Synth 8-3886] merging instance 'TD/DB_D/DFF1/Q_reg' (FD) to 'MENU/DB_D/DFF1/Q_reg'
+INFO: [Synth 8-3886] merging instance 'MENU/DB_U/DFF2/Q_reg' (FD) to 'SBR/DB_U/DFF2/Q_reg'
+INFO: [Synth 8-3886] merging instance 'MENU/DB_L/DFF1/Q_reg' (FD) to 'TD/DB_L/DFF1/Q_reg'
+INFO: [Synth 8-3886] merging instance 'MENU/DB_D/DFF2/Q_reg' (FD) to 'AUDVIS/VBO/DB_D/DFF2/Q_reg'
+INFO: [Synth 8-3886] merging instance 'PONG/DB_C/DFF1/Q_reg' (FD) to 'nolabel_line100/DB_C/DFF1/Q_reg'
+INFO: [Synth 8-3886] merging instance 'MENU/DB_C/DFF1/Q_reg' (FD) to 'nolabel_line100/DB_C/DFF1/Q_reg'
+INFO: [Synth 8-3886] merging instance 'MENU/DB_R/DFF2/Q_reg' (FD) to 'AUDVIS/VBO/DB_R/DFF2/Q_reg'
+INFO: [Synth 8-3886] merging instance 'SBR/DB_C/DFF1/Q_reg' (FD) to 'nolabel_line100/DB_C/DFF1/Q_reg'
+INFO: [Synth 8-3886] merging instance 'nolabel_line100/DB_C/DFF2/Q_reg' (FD) to 'SBR/DB_C/DFF2/Q_reg'
+INFO: [Synth 8-3886] merging instance 'TD/DB_L/DFF2/Q_reg' (FD) to 'MENU/DB_L/DFF2/Q_reg'
+INFO: [Synth 8-3886] merging instance 'AUDVIS/VBO/DB_L/DFF2/Q_reg' (FD) to 'MENU/DB_L/DFF2/Q_reg'
+INFO: [Synth 8-3886] merging instance 'SBR/DB_U/BTNDB_reg' (FD) to 'MENU/DB_U/BTNDB_reg'
+INFO: [Synth 8-3886] merging instance 'AUDVIS/VBO/DB_D/BTNDB_reg' (FD) to 'TD/DB_D/BTNDB_reg'
+INFO: [Synth 8-3886] merging instance 'AUDVIS/VBO/DB_U/BTNDB_reg' (FD) to 'TD/DB_U/BTNDB_reg'
+INFO: [Synth 8-3886] merging instance 'AUDVIS/VBO/DB_R/BTNDB_reg' (FD) to 'MENU/DB_R/BTNDB_reg'
+INFO: [Synth 8-3886] merging instance 'AUDVIS/VBO/DB_U/DFF2/Q_reg' (FD) to 'SBR/DB_U/DFF2/Q_reg'
+INFO: [Synth 8-3886] merging instance 'AUDVIS/VBO/DB_C/DFF2/Q_reg' (FD) to 'SBR/DB_C/DFF2/Q_reg'
+INFO: [Synth 8-3886] merging instance 'AUDVIS/VBO/DB_C/BTNDB_reg' (FD) to 'TD/DB_C/BTNDB_reg'
+INFO: [Synth 8-3886] merging instance 'TD/DB_D/BTNDB_reg' (FD) to 'MENU/DB_D/BTNDB_reg'
+INFO: [Synth 8-3886] merging instance 'PONG/DB_C/DFF2/Q_reg' (FD) to 'SBR/DB_C/DFF2/Q_reg'
+INFO: [Synth 8-3886] merging instance 'MENU/DB_C/DFF2/Q_reg' (FD) to 'SBR/DB_C/DFF2/Q_reg'
+INFO: [Synth 8-3886] merging instance 'MENU/DB_L/BTNDB_reg' (FD) to 'TD/DB_L/BTNDB_reg'
+INFO: [Synth 8-3886] merging instance 'SBR/DB_C/BTNDB_reg' (FD) to 'nolabel_line100/DB_C/BTNDB_reg'
+INFO: [Synth 8-3886] merging instance 'AUDVIS/VBO/DB_L/BTNDB_reg' (FD) to 'TD/DB_L/BTNDB_reg'
+INFO: [Synth 8-3886] merging instance 'TD/DB_U/BTNDB_reg' (FD) to 'MENU/DB_U/BTNDB_reg'
+INFO: [Synth 8-3886] merging instance 'TD/DB_C/BTNDB_reg' (FD) to 'PONG/DB_C/BTNDB_reg'
+INFO: [Synth 8-3886] merging instance 'PONG/DB_C/BTNDB_reg' (FD) to 'MENU/DB_C/BTNDB_reg'
+INFO: [Synth 8-3886] merging instance 'MENU/DB_C/BTNDB_reg' (FD) to 'nolabel_line100/DB_C/BTNDB_reg'
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:06:05 ; elapsed = 00:06:13 . Memory (MB): peak = 1540.719 ; gain = 1284.457
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:06:08 ; elapsed = 00:06:17 . Memory (MB): peak = 1540.719 ; gain = 1284.457
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:06:09 ; elapsed = 00:06:17 . Memory (MB): peak = 1540.719 ; gain = 1284.457
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:06:11 ; elapsed = 00:06:19 . Memory (MB): peak = 1540.719 ; gain = 1284.457
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:06:15 ; elapsed = 00:06:23 . Memory (MB): peak = 1540.719 ; gain = 1284.457
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:06:17 ; elapsed = 00:06:26 . Memory (MB): peak = 1540.719 ; gain = 1284.457
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:06:17 ; elapsed = 00:06:26 . Memory (MB): peak = 1540.719 ; gain = 1284.457
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     5|
+|2     |CARRY4 |   749|
+|3     |LUT1   |   276|
+|4     |LUT2   |  1464|
+|5     |LUT3   |   985|
+|6     |LUT4   |  1686|
+|7     |LUT5   |  2503|
+|8     |LUT6   | 15887|
+|9     |MUXF7  |  5018|
+|10    |MUXF8  |  1939|
+|11    |FDE_1  |    32|
+|12    |FDRE   |  1559|
+|13    |FDSE   |   149|
+|14    |IBUF   |    16|
+|15    |OBUF   |    36|
+|16    |OBUFT  |     1|
++------+-------+------+
+
+Report Instance Areas: 
++------+------------------+-----------------------+------+
+|      |Instance          |Module                 |Cells |
++------+------------------+-----------------------+------+
+|1     |top               |                       | 32305|
+|2     |  AC              |Audio_Capture          |    78|
+|3     |  AUDVIS          |Oled_DRIVER_visualiser |   682|
+|4     |    OB            |Oled_Border            |     2|
+|5     |    VBO           |volume_bar_oled        |   680|
+|6     |      DB_D        |debounced_button_20    |     1|
+|7     |        DFF2      |DFF_23                 |     1|
+|8     |      DB_R        |debounced_button_21    |     1|
+|9     |        DFF2      |DFF_22                 |     1|
+|10    |  COORDS          |getcoords              |   276|
+|11    |  MENU            |Oled_DRIVER_menu       |   100|
+|12    |    DB_D          |debounced_button_12    |    12|
+|13    |      DFF1        |DFF_19                 |     2|
+|14    |    DB_L          |debounced_button_13    |     1|
+|15    |      DFF2        |DFF_18                 |     1|
+|16    |    DB_R          |debounced_button_14    |     7|
+|17    |      DFF1        |DFF_17                 |     2|
+|18    |    DB_U          |debounced_button_15    |    15|
+|19    |      DFF1        |DFF_16                 |     2|
+|20    |    MO            |menu_oled              |     7|
+|21    |  OLED            |Oled_Display           | 14826|
+|22    |  OLEDMAINDRIVER  |Oled_DRIVER_main       |   102|
+|23    |  PONG            |Oled_DRIVER_pong       |   530|
+|24    |  SBR             |Oled_DRIVER_shibarun   |   986|
+|25    |    DB_C          |debounced_button_7     |     1|
+|26    |      DFF2        |DFF_11                 |     1|
+|27    |    DB_U          |debounced_button_8     |     1|
+|28    |      DFF2        |DFF_10                 |     1|
+|29    |    rng6x         |rng_6bit_9             |     7|
+|30    |  SEGDRIV         |segment_driver         |    94|
+|31    |  TD              |Oled_DRIVER_towerdef   |  5431|
+|32    |    DB_L          |debounced_button_5     |   285|
+|33    |      DFF1        |DFF_6                  |     4|
+|34    |    rng_6x_enemy  |rng_6bit               |    14|
+|35    |    rng_6x_enemy2 |rng_6bit_2             |    11|
+|36    |    rng_6x_enemy3 |rng_6bit_3             |    11|
+|37    |  clk10hz         |slowclock              |    50|
+|38    |  clk20khz        |slowclock_0            |    50|
+|39    |  clk24hz         |slowclock_1            |    50|
+|40    |  clk381hz        |slowclock_2            |    50|
+|41    |  clk3hz          |slowclock_3            |    50|
+|42    |  clk6p25mhz      |slowclock_4            |    50|
+|43    |  nolabel_line100 |Oled_DRIVER_shooter    |  8002|
+|44    |    DB_C          |debounced_button       |   952|
+|45    |      DFF1        |DFF                    |     9|
+|46    |    rng5x         |rng_5bit               |    11|
+|47    |  nolabel_line65  |max_vol                |   839|
++------+------------------+-----------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:06:17 ; elapsed = 00:06:26 . Memory (MB): peak = 1540.719 ; gain = 1284.457
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 30 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:06:01 ; elapsed = 00:06:16 . Memory (MB): peak = 1540.719 ; gain = 949.621
+Synthesis Optimization Complete : Time (s): cpu = 00:06:18 ; elapsed = 00:06:26 . Memory (MB): peak = 1540.719 ; gain = 1284.457
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 7754 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 32 instances were transformed.
+  FDE_1 => FDRE (inverted pins: C): 32 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+278 Infos, 99 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:06:27 ; elapsed = 00:06:35 . Memory (MB): peak = 1540.719 ; gain = 1297.449
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/ong1m/Downloads/Telegram Desktop/S2_25_Chew Yi Jie_Marcus Ong Yih_Archive.xpr/Recreated/Recreated.runs/synth_1/Top_Student.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 1540.719 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_utilization -file Top_Student_utilization_synth.rpt -pb Top_Student_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.211 . Memory (MB): peak = 1540.719 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sat Apr  3 01:14:43 2021...

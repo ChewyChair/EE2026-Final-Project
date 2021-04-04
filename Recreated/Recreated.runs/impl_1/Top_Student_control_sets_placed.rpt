@@ -1,0 +1,201 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Sat Apr  3 01:16:39 2021
+| Host         : Bory running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file Top_Student_control_sets_placed.rpt
+| Design       : Top_Student
+| Device       : xc7a35t
+----------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |   132 |
+| Unused register locations in slices containing registers |   368 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      2 |            1 |
+|      8 |            4 |
+|     10 |            8 |
+|     12 |           41 |
+|     14 |           43 |
+|    16+ |           35 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             892 |          254 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |             698 |          122 |
+| Yes          | No                    | No                     |            1322 |          310 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             568 |          108 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++------------------------+---------------------------------------+---------------------------------------------+------------------+----------------+
+|      Clock Signal      |             Enable Signal             |               Set/Reset Signal              | Slice Load Count | Bel Load Count |
++------------------------+---------------------------------------+---------------------------------------------+------------------+----------------+
+|  clk3hz/in0            |                                       |                                             |                1 |              2 |
+|  clk24_BUFG            |                                       | SBR/title_timer[3]_i_1__1_n_0               |                2 |              8 |
+|  clk24_BUFG            |                                       | TD/DB_L/title_timer_reg[0]                  |                2 |              8 |
+|  clk6p25m_BUFG         | OLEDMAINDRIVER/oled_towerdef_reg[15]  | TD/DB_L/oled_towerdef_reg[15]               |                3 |              8 |
+|  clk24_BUFG            | TD/DB_L/enemy3_posY_reg[0]            | TD/DB_L/enemy3_posY_reg[0]_0                |                2 |              8 |
+|  clk24_BUFG            |                                       | TD/hold_L[4]_i_1_n_0                        |                2 |             10 |
+|  clk24_BUFG            | OLEDMAINDRIVER/hold_R_reg[0]          | OLEDMAINDRIVER/hold_R_reg[0]_0              |                1 |             10 |
+|  clk24_BUFG            | OLEDMAINDRIVER/hold_R_reg[0]          | OLEDMAINDRIVER/hold_D_reg[0]                |                1 |             10 |
+|  clk24_BUFG            | OLEDMAINDRIVER/hold_R_reg[0]          | OLEDMAINDRIVER/hold_L_reg[0]                |                1 |             10 |
+|  clk24_BUFG            | OLEDMAINDRIVER/hold_R_reg[0]          | OLEDMAINDRIVER/hold_U_reg[0]                |                2 |             10 |
+|  clk24_BUFG            | OLEDMAINDRIVER/hold_C_reg[0]_0[0]     | OLEDMAINDRIVER/SR[0]                        |                1 |             10 |
+|  clk24_BUFG            | nolabel_line100/DB_C/jet_fire_timer   |                                             |                1 |             10 |
+|  clk24_BUFG            | TD/DB_L/enemy2_posY_reg[0]            | TD/DB_L/enemy2_posY_reg[5]                  |                2 |             10 |
+|  clk24_BUFG            | nolabel_line100/DB_C/WX5_reg[6][0]    | nolabel_line100/DB_C/WX4_reg[2][0]          |                2 |             12 |
+|  clk10_BUFG            | OLEDMAINDRIVER/forcefields_reg[6][0]  |                                             |                2 |             12 |
+|  clk24_BUFG            | nolabel_line100/DB_C/D1X0_reg[1][0]   | nolabel_line100/DB_C/SR[0]                  |                1 |             12 |
+|  clk24_BUFG            | nolabel_line100/DB_C/D2X5_reg[1][0]   | nolabel_line100/DB_C/D2X3_reg[2][0]         |                2 |             12 |
+|  clk24_BUFG            | nolabel_line100/DB_C/D2X0_reg[1][0]   | nolabel_line100/DB_C/D2X1_reg[2][0]         |                2 |             12 |
+|  clk24_BUFG            | nolabel_line100/DB_C/D2X3_reg[1][0]   | nolabel_line100/DB_C/D2X3_reg[2][0]         |                2 |             12 |
+|  clk10_BUFG            | nolabel_line65/level_reg[6][0]        |                                             |                2 |             12 |
+|  clk24_BUFG            | nolabel_line100/DB_C/WX11_reg[1][0]   | nolabel_line100/DB_C/WX9_reg[6][0]          |                1 |             12 |
+|  clk24_BUFG            | nolabel_line100/DB_C/PBY8_reg[6][0]   |                                             |                3 |             12 |
+|  clk24_BUFG            | nolabel_line100/DB_C/PBY5_reg[6][0]   |                                             |                5 |             12 |
+|  clk24_BUFG            | nolabel_line100/DB_C/PBY0_reg[6][0]   |                                             |                3 |             12 |
+|  clk24_BUFG            | nolabel_line100/DB_C/D2X4_reg[1][0]   | nolabel_line100/DB_C/D2X3_reg[2][0]         |                2 |             12 |
+|  clk24_BUFG            | OLEDMAINDRIVER/enemy_posY_reg[5][0]   |                                             |                2 |             12 |
+|  clk24_BUFG            | nolabel_line100/DB_C/PBY9_reg[6]_0[0] |                                             |                2 |             12 |
+|  clk24_BUFG            | OLEDMAINDRIVER/random0y_reg[0][0]     |                                             |                2 |             12 |
+|  clk24_BUFG            | nolabel_line100/DB_C/PBY4_reg[1][0]   |                                             |                4 |             12 |
+|  clk24_BUFG            | nolabel_line100/DB_C/PBY7_reg[6][0]   |                                             |                4 |             12 |
+|  clk24_BUFG            | SBR/random1y[5]_i_1_n_0               |                                             |                2 |             12 |
+|  clk24_BUFG            | nolabel_line100/DB_C/PBY3             |                                             |                4 |             12 |
+|  clk24_BUFG            | nolabel_line100/DB_C/PBY1_reg[1][0]   |                                             |                3 |             12 |
+|  clk24_BUFG            | nolabel_line100/DB_C/PBY6_reg[6][0]   |                                             |                2 |             12 |
+|  clk24_BUFG            | nolabel_line100/DB_C/PBY2             |                                             |                2 |             12 |
+|  clk24_BUFG            | nolabel_line100/DB_C/D2X1_reg[1][0]   | nolabel_line100/DB_C/D2X1_reg[2][0]         |                2 |             12 |
+|  clk24_BUFG            | nolabel_line100/DB_C/D1X3_reg[1][0]   | nolabel_line100/DB_C/D1X3_reg[2][0]         |                1 |             12 |
+|  clk24_BUFG            | nolabel_line100/DB_C/D1X4_reg[1][0]   | nolabel_line100/DB_C/D1X3_reg[2][0]         |                2 |             12 |
+|  clk24_BUFG            | nolabel_line100/DB_C/D1X2_reg[1][0]   | nolabel_line100/DB_C/SR[0]                  |                2 |             12 |
+|  clk24_BUFG            | nolabel_line100/DB_C/D1X5_reg[1][0]   | nolabel_line100/DB_C/D1X3_reg[2][0]         |                2 |             12 |
+|  clk24_BUFG            | nolabel_line100/DB_C/D2X2_reg[1][0]   | nolabel_line100/DB_C/D2X1_reg[2][0]         |                2 |             12 |
+|  clk24_BUFG            | nolabel_line100/DB_C/WX10_reg[1][0]   | nolabel_line100/DB_C/WX9_reg[6][0]          |                2 |             12 |
+|  clk24_BUFG            | nolabel_line100/DB_C/WX3_reg[6][0]    | nolabel_line100/DB_C/WX1_reg[2][0]          |                2 |             12 |
+|  clk24_BUFG            | nolabel_line100/DB_C/WX0_reg[1][0]    | nolabel_line100/DB_C/WX1_reg[2][0]          |                2 |             12 |
+|  clk24_BUFG            | nolabel_line100/DB_C/WX7_reg[1][0]    | nolabel_line100/DB_C/WX4_reg[2][0]          |                2 |             12 |
+|  clk24_BUFG            | nolabel_line100/DB_C/WX8_reg[1][0]    | nolabel_line100/DB_C/WX9_reg[6][0]          |                2 |             12 |
+|  clk24_BUFG            | nolabel_line100/DB_C/WX2_reg[1][0]    | nolabel_line100/DB_C/WX1_reg[2][0]          |                2 |             12 |
+|  clk24_BUFG            | nolabel_line100/DB_C/D1X1_reg[1][0]   | nolabel_line100/DB_C/SR[0]                  |                2 |             12 |
+|  clk24_BUFG            | nolabel_line100/DB_C/WX4_reg[6][0]    | nolabel_line100/DB_C/WX4_reg[2][0]          |                2 |             12 |
+|  clk24_BUFG            | nolabel_line100/DB_C/WX9_reg[6]_0[0]  | nolabel_line100/DB_C/WX9_reg[6][0]          |                1 |             12 |
+|  clk24_BUFG            | nolabel_line100/DB_C/WX1_reg[6][0]    | nolabel_line100/DB_C/WX1_reg[2][0]          |                2 |             12 |
+|  clk24_BUFG            | AUDVIS/VBO/bar_width[5]_i_2_n_0       | AUDVIS/VBO/bar_width[5]_i_1_n_0             |                2 |             12 |
+|  clk6p25m_BUFG         | MENU/secret                           | nolabel_line100/DB_C/oled_shooter_reg[10]   |                6 |             12 |
+|  clk24_BUFG            | nolabel_line100/DB_C/WX6_reg[1][0]    | nolabel_line100/DB_C/WX4_reg[2][0]          |                2 |             12 |
+|  clk24_BUFG            | nolabel_line100/DB_C/D2X3_reg[2][0]   |                                             |                2 |             14 |
+|  clk24_BUFG            | nolabel_line100/DB_C/D2Y4_reg[0][0]   |                                             |                4 |             14 |
+|  clk24_BUFG            | nolabel_line100/DB_C/D2Y5_reg[0][0]   |                                             |                3 |             14 |
+|  clk24_BUFG            | nolabel_line100/DB_C/HX1_reg[0][0]    | nolabel_line100/DB_C/HX1_reg[6]_0[0]        |                3 |             14 |
+|  clk24_BUFG            | nolabel_line100/DB_C/HX0_reg[0][0]    | nolabel_line100/DB_C/SS[0]                  |                3 |             14 |
+|  clk24_BUFG            | nolabel_line100/DB_C/E[0]             |                                             |                3 |             14 |
+|  clk24_BUFG            | nolabel_line100/DB_C/PBX1_reg[0][0]   |                                             |                4 |             14 |
+|  clk24_BUFG            | nolabel_line100/DB_C/PBX0_reg[0][0]   |                                             |                4 |             14 |
+|  clk24_BUFG            | nolabel_line100/DB_C/PBX2_reg[0][0]   |                                             |                3 |             14 |
+|  clk24_BUFG            | nolabel_line100/DB_C/PBX5_reg[0][0]   |                                             |                3 |             14 |
+|  clk24_BUFG            | nolabel_line100/DB_C/PBX3_reg[0][0]   |                                             |                4 |             14 |
+|  clk24_BUFG            | nolabel_line100/DB_C/PBX4_reg[0][0]   |                                             |                4 |             14 |
+|  clk6p25m_BUFG         | MENU/secret                           | nolabel_line100/DB_C/oled_shooter_reg[15]_1 |                5 |             14 |
+|  clk24_BUFG            | nolabel_line100/DB_C/PBX6_reg[0][0]   |                                             |                4 |             14 |
+|  clk24_BUFG            | nolabel_line100/DB_C/PBX8_reg[0][0]   |                                             |                3 |             14 |
+|  clk24_BUFG            | nolabel_line100/DB_C/PBX7_reg[0][0]   |                                             |                4 |             14 |
+|  clk24_BUFG            | nolabel_line100/DB_C/SX4_reg[0][0]    | nolabel_line100/DB_C/SY4_reg[0][0]          |                3 |             14 |
+|  clk24_BUFG            | nolabel_line100/DB_C/SY2_reg[0][0]    |                                             |                3 |             14 |
+|  clk24_BUFG            | nolabel_line100/DB_C/SX1_reg[0][0]    | nolabel_line100/DB_C/SY1_reg[6][0]          |                3 |             14 |
+|  clk24_BUFG            | nolabel_line100/DB_C/SX2_reg[0][0]    | nolabel_line100/DB_C/SY2_reg[0][0]          |                4 |             14 |
+|  clk24_BUFG            | nolabel_line100/DB_C/SX5_reg[0][0]    | nolabel_line100/DB_C/SX5_reg[6][0]          |                3 |             14 |
+|  clk24_BUFG            | nolabel_line100/DB_C/SX5_reg[6][0]    |                                             |                2 |             14 |
+|  clk24_BUFG            | nolabel_line100/DB_C/SY0_reg[0][0]    |                                             |                2 |             14 |
+|  clk24_BUFG            | nolabel_line100/DB_C/SX3_reg[0][0]    | nolabel_line100/DB_C/SY3_reg[0][0]          |                3 |             14 |
+|  clk24_BUFG            | nolabel_line100/DB_C/SX0_reg[0][0]    | nolabel_line100/DB_C/SY0_reg[0][0]          |                2 |             14 |
+|  clk24_BUFG            | nolabel_line100/DB_C/SY4_reg[0][0]    |                                             |                2 |             14 |
+|  clk24_BUFG            | nolabel_line100/DB_C/SY3_reg[0][0]    |                                             |                2 |             14 |
+|  clk24_BUFG            | nolabel_line100/DB_C/SY1_reg[6][0]    |                                             |                2 |             14 |
+|  clk24_BUFG            | nolabel_line100/DB_C/SR[0]            |                                             |                2 |             14 |
+|  clk10_BUFG            | OLEDMAINDRIVER/ones_reg[6]_0[0]       |                                             |                5 |             14 |
+|  clk10_BUFG            | OLEDMAINDRIVER/tens_reg[6][0]         |                                             |                5 |             14 |
+|  clk10_BUFG            | OLEDMAINDRIVER/thousands_reg[6]_0[0]  |                                             |                3 |             14 |
+|  clk10_BUFG            | SBR/hundreds_reg[6][0]                |                                             |                3 |             14 |
+|  clk24_BUFG            | nolabel_line100/DB_C/PBX9_reg[0][0]   |                                             |                4 |             14 |
+|  clk24_BUFG            | nolabel_line100/DB_C/D1X3_reg[2][0]   |                                             |                3 |             14 |
+|  clk24_BUFG            | nolabel_line100/DB_C/D1Y2_reg[0][0]   |                                             |                3 |             14 |
+|  clk24_BUFG            | nolabel_line100/DB_C/D1Y4_reg[0][0]   |                                             |                3 |             14 |
+|  clk24_BUFG            | nolabel_line100/DB_C/D1Y5_reg[0][0]   |                                             |                4 |             14 |
+|  clk24_BUFG            | AUDVIS/VBO/bar_pos[6]_i_1_n_0         | AUDVIS/VBO/bar_width[5]_i_1_n_0             |                5 |             14 |
+|  clk24_BUFG            | nolabel_line100/DB_C/D2X1_reg[2][0]   |                                             |                4 |             14 |
+|  clk24_BUFG            | nolabel_line100/DB_C/D2Y1_reg[0][0]   |                                             |                5 |             14 |
+|  clk24_BUFG            | nolabel_line100/DB_C/D2Y2_reg[0][0]   |                                             |                3 |             14 |
+|  clock_IBUF_BUFG       |                                       |                                             |                7 |             14 |
+|  clk24_BUFG            | OLEDMAINDRIVER/E[0]                   |                                             |                5 |             16 |
+|  clk6p25m_BUFG         | OLEDMAINDRIVER/oled_towerdef_reg[15]  | TD/DB_L/oled_towerdef_reg[12]_2             |                4 |             16 |
+|  clk6p25m_BUFG         | MENU/secret                           |                                             |                7 |             18 |
+|  J_MIC3_Pin1_OBUF_BUFG | AC/E[0]                               | nolabel_line65/max0                         |                5 |             24 |
+| ~AC/J_MIC3_Pin4_OBUF   |                                       |                                             |                7 |             24 |
+|  clock_IBUF_BUFG       |                                       | J_MIC3_Pin1_OBUF_BUFG                       |                3 |             24 |
+|  clk24_BUFG            |                                       | OLEDMAINDRIVER/display_flag[1]              |                8 |             26 |
+|  clk6p25m_BUFG         |                                       | MENU/title_timer_reg[5]                     |                7 |             26 |
+|  clk381hz/CLK          |                                       |                                             |                9 |             26 |
+|  clk24_BUFG            |                                       | MENU/title_timer_reg[5]                     |                9 |             28 |
+|  clk6p25m_BUFG         |                                       | OLEDMAINDRIVER/score_reg[0]                 |                6 |             28 |
+|  clk24_BUFG            | OLEDMAINDRIVER/shiba_jump_reg[0]      |                                             |                6 |             30 |
+|  clk24_BUFG            |                                       | OLEDMAINDRIVER/ball_Y_reg[7]                |                4 |             32 |
+|  clk10_BUFG            |                                       |                                             |                9 |             32 |
+|  clk6p25m_BUFG         | OLEDMAINDRIVER/oled_PONG_reg[15]      |                                             |               11 |             32 |
+|  clk6p25m_BUFG         | OLEDMAINDRIVER/oled_SBR_reg[0][0]     |                                             |               14 |             32 |
+|  clk24_BUFG            |                                       | OLEDMAINDRIVER/score_reg[0]                 |               11 |             34 |
+| ~clk6p25m_BUFG         |                                       |                                             |                6 |             36 |
+| ~clk6p25m_BUFG         | OLED/delay[0]_i_1_n_0                 |                                             |                5 |             40 |
+|  clk24_BUFG            | nolabel_line100/DB_C/halfclock        |                                             |               13 |             44 |
+|  J_MIC3_Pin1_OBUF_BUFG |                                       |                                             |               11 |             44 |
+|  clk24_BUFG            | nolabel_line100/DB_C/WX9_reg[6][0]    |                                             |               13 |             48 |
+|  clk24_BUFG            | nolabel_line100/DB_C/WX1_reg[2][0]    |                                             |               10 |             48 |
+|  clk24_BUFG            | nolabel_line100/DB_C/WX4_reg[2][0]    |                                             |               15 |             56 |
+| ~clk6p25m_BUFG         | OLED/FSM_onehot_state[31]_i_1_n_0     |                                             |                8 |             64 |
+|  clock_IBUF_BUFG       |                                       | clk381hz/clear__0                           |                8 |             64 |
+|  clock_IBUF_BUFG       |                                       | clk3hz/COUNT[0]_i_1__1_n_0                  |                8 |             64 |
+|  clock_IBUF_BUFG       |                                       | clk24hz/COUNT[0]_i_1__0_n_0                 |                8 |             64 |
+|  clock_IBUF_BUFG       |                                       | clk10hz/COUNT[0]_i_1__4_n_0                 |                8 |             64 |
+|  clock_IBUF_BUFG       |                                       | clk20khz/COUNT[0]_i_1__2_n_0                |                8 |             64 |
+|  clock_IBUF_BUFG       |                                       | clk6p25mhz/clear                            |                8 |             64 |
+| ~clk6p25m_BUFG         |                                       | OLED/spi_word[39]_i_1_n_0                   |               20 |             90 |
+|  clk6p25m_BUFG         |                                       |                                             |               39 |            146 |
+|  clk24_BUFG            | OLEDMAINDRIVER/vol0_reg[15][0]        |                                             |               55 |            256 |
+|  clk24_BUFG            |                                       |                                             |              165 |            568 |
++------------------------+---------------------------------------+---------------------------------------------+------------------+----------------+
+
+
